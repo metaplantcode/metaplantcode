@@ -735,8 +735,8 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
 }
 
 .contact a:hover {
-  color: var(--active); /* Hover-Farbe */
-  text-decoration: none; /* Unterstreichung entfernen */
+  color: var(--active); 
+  text-decoration: underline; 
 }
 
 .contact {

@@ -747,7 +747,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
 /* Mail hervorheben */
 .contact strong {
   font-weight: bold;
-  color: var(--dark); /* Hebt das "Mail" hervor */
+  color: var(--1); /* Hebt das "Mail" hervor */
 }
 
 /* -------------------Mobile-Version----------------------*/

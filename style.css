@@ -460,6 +460,11 @@ text-decoration: underline;
   margin-bottom: 1.5rem;
 }
 
+h2 a {
+  color: inherit;          /* Inherit color from h2 */
+  text-decoration: none;   /* Remove underline by default */
+}
+
 h2 a:hover {
   color: var(--active);            /* Change color to green on hover */
   text-decoration: underline; /* Add underline on hover */

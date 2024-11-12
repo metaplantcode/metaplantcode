@@ -248,12 +248,12 @@ font-size: xx-large;
 .slideshow-container {
 box-sizing: border-box;
 background-color: var(--dark);
-position: relative;
+position:relative;
 width: 100%;
 min-height:fit-content;
 margin: 0 auto 5rem auto;
 overflow: hidden;
-display: flex;
+display: inline-flex;
 justify-content: space-around;
 align-items: center;
 padding:2rem;
@@ -262,11 +262,10 @@ padding:2rem;
 .slide {
 display: none;
 background-color: white;
-border: 1px solid white;
+border:1px solid white;
 box-shadow: 2px 2px 5px white;
 width: 30%;
 height: fit-content;
-transition: 0.5s ease;
 }
 
 .slide-picture{
@@ -344,7 +343,6 @@ color: var(--dark);
 background-color: var(--active);
 font-weight: bold;
 font-size: 18px;
-z-index: 1;
 transition: 0.6s ease;  
 }
 
@@ -462,6 +460,10 @@ text-decoration: underline;
   margin-bottom: 1.5rem;
 }
 
+h2 a:hover {
+  color: var(--active);            /* Change color to green on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
 .country-flag {
   width: 30px; /* oder die gewünschte Größe */
   height: auto; /* um das Seitenverhältnis zu erhalten */

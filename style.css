@@ -452,6 +452,16 @@ text-decoration: underline;
   box-sizing: border-box; /* Berücksichtige Padding und Border in der Breite */
 }
 
+.consortium-members h2 a {
+  color: inherit;          /* Inherit color from h2 */
+  text-decoration: none;   /* Remove underline by default */
+}
+
+.consortium-members h2 a:hover {
+  color: var(--active);            /* Change color to green on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
 .cons-consortium-header {
   font-size: 1.5rem;
   font-weight: bold;
@@ -460,15 +470,6 @@ text-decoration: underline;
   margin-bottom: 1.5rem;
 }
 
-h2 a {
-  color: inherit;          /* Inherit color from h2 */
-  text-decoration: none;   /* Remove underline by default */
-}
-
-h2 a:hover {
-  color: var(--active);            /* Change color to green on hover */
-  text-decoration: underline; /* Add underline on hover */
-}
 .country-flag {
   width: 30px; /* oder die gewünschte Größe */
   height: auto; /* um das Seitenverhältnis zu erhalten */

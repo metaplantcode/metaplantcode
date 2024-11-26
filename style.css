@@ -433,6 +433,8 @@ text-decoration: underline;
 }
 
 /* -------------------TEAM----------------------*/
+
+
 .consortium {
   padding: 10px;
 }
@@ -491,6 +493,16 @@ text-decoration: underline;
   text-align: center; /* Text zentrieren */
   margin: 1rem; /* Abstand zwischen den Mitgliedern */
   width: 150px; /* Optionale Breite für jedes Mitglied */
+}
+
+.team-member a{
+  color: inherit;
+  text-decoration: none; 
+}
+
+.team-member a:hover {
+  color: var(--active);            /* Change color to green on hover */
+  text-decoration: underline; 
 }
 
 .team-member img {

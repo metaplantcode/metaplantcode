@@ -435,11 +435,8 @@ text-decoration: underline;
 /* -------------------TEAM----------------------*/
 .consortium {
   padding: 10px;
-}
-
-.consortium h1, 
-.consortium p {
   text-align: center;
+  margin: 0 auto;
 }
 
 .consortium-members {

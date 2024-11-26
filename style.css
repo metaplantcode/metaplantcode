@@ -439,6 +439,10 @@ text-decoration: underline;
   padding: 10px;
 }
 
+.consortium h1 {
+  text-align: center;
+}
+
 .consortium-members {
   display: flex;
   flex-direction:column;
@@ -462,6 +466,16 @@ text-decoration: underline;
 .consortium-members h2 a:hover {
   color: var(--active);            /* Change color to green on hover */
   text-decoration: underline; /* Add underline on hover */
+}
+
+.consortium-members a {
+  color:#000000;
+  text-decoration: none;
+}
+
+.consortium-members a:hover {
+  color: var(--active);
+  text-decoration: underline;
 }
 
 .cons-consortium-header {

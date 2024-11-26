@@ -433,10 +433,9 @@ text-decoration: underline;
 }
 
 /* -------------------TEAM----------------------*/
-
-
 .consortium {
   padding: 10px;
+  text-align: center;
 }
 
 .consortium h1 {

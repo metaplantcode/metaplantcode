@@ -67,7 +67,9 @@ body{
 
 .header-image{
 width:100%; 
-height:10rem; 
+max-width: 100%;
+height: auto;
+margin: auto;
 background:var(--dark); 
 display: inline-flex; align-items: center;
 }
@@ -875,19 +877,16 @@ div.content, div.content-aboutus {
   }
 
   .menu ul li {
-      text-align: center;
-      padding: 15px;
-      border-bottom: 1px solid #ddd;
+    padding: 0.8rem 0;
   }
+      
+
   .menu ul li:last-child{
     border-bottom: none;
   }
 
   .menu ul li a {
-    color: var(--dark);
-    text-decoration: none;
-    font-size: 1rem;
-    display: block;
+    font-size: 0.9rem;
   }
     
   .menu ul li a:hover{
@@ -901,13 +900,26 @@ div.content, div.content-aboutus {
   }
 
   .menu.open ul {
-    max-height: 500px; /* Platz für alle Einträge */
-    overflow-y: auto; /* Scrollbar, falls notwendig */
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .menu.open ul li {
-    padding: 10px 15px;
+    list-style: none;
+    padding: 1rem 0;
+    width: 100;
+    text-align: center;
+  }
+
+  .menu.open ul li a {
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 1rem;
   }
 
   .menu.open ul li a:hover {
@@ -916,45 +928,43 @@ div.content, div.content-aboutus {
   }
 
   .header-image img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
+    max-width: 80%;
   }
 
   .header-text p {
-      font-size: 1rem;
-      text-align: center;
-      line-height: 1.5;
-      padding: 0 10px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 10px;
   }
 
   .view-all-container {
-      padding: 10px;
+    padding: 10px;
   }
 
   .news-header p {
-      font-size: 1.2rem;
-      text-align: center;
-      margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .social-media .smimage {
-      width: 40px;
-      height: 40px;
+    width: 40px;
+    height: 40px;
   }
 
   .funders img {
-      width: 40%;
-      height: auto;
-      max-width: 150px;
-      margin: 5px;
+    width: 40%;
+    height: auto;
+    max-width: 150px;
+    margin: 5px;
   }
 
   .funders {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }

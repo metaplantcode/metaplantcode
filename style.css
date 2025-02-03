@@ -199,6 +199,7 @@ h1.item{
   -webkit-transform: rotate(-45deg);
 }
 
+/* STAKEHOLDER SURVEY SPRING 2025 */
 .survey {
   background-color: white; /* Falls der Welcome-Kasten weiß ist */
   border-radius: 10px; /* Abgerundete Ecken */
@@ -210,30 +211,22 @@ h1.item{
 }
 
 .survey h2 {
-  font-family: 'YourFont', sans-serif; /* Ersetze 'YourFont' durch die passende Schriftart */
-  font-size: 24px; /* Gleiche Größe wie beim Welcome-Kasten */
-  color: #333; /* Dunkle Farbe für bessere Lesbarkeit */
+  color: var(--dark);
 }
 
-.survey p {
-  font-family: 'YourFont', sans-serif;
-  font-size: 16px;
-  color: #666; /* Etwas hellere Farbe für den Text */
-}
-
-.survey a {
+.survey .button {
   display: inline-block;
-  text-decoration: none;
-  background-color: #007bff; /* Blaue Farbe für den Button */
-  color: white;
   padding: 10px 20px;
+  background-color: var(--dark);
+  color: white;
+  text-decoration: none;
   border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-.survey a:hover {
-  background-color: #0056b3; /* Dunklere Farbe beim Hover-Effekt */
+.survey .button:hover {
+  color: var(--active);
+  text-decoration: underline;
 }
 
 .palette{

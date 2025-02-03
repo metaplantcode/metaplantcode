@@ -214,20 +214,6 @@ h1.item{
   color: var(--dark);
 }
 
-.survey .button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--dark);
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.survey .button:hover {
-  color: var(--active);
-  text-decoration: underline;
-}
 
 .palette{
 display: flex;

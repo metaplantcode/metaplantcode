@@ -201,11 +201,12 @@ h1.item{
 
 /* STAKEHOLDER SURVEY SPRING 2025 */
 .survey {
-  background-color: white; /* Falls der Welcome-Kasten weiß ist */
+  background-color: var(--field); 
   border-radius: 10px; /* Abgerundete Ecken */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Weiche Schatten */
-  padding: 20px; /* Innenabstand */
-  max-width: 600px; /* Gleiche Breite wie der Welcome-Kasten */
+  padding: 2rem; /* Innenabstand */
+  padding-left: 20rem;
+  padding-right: 20rem;
   margin: 20px auto; /* Zentriert und mit Abstand nach oben/unten */
   text-align: center; /* Text in der Mitte */
 }

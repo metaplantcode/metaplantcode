@@ -199,7 +199,7 @@ h1.item{
   -webkit-transform: rotate(-45deg);
 }
 
-.survey-container {
+.survey {
   background-color: white; /* Falls der Welcome-Kasten weiß ist */
   border-radius: 10px; /* Abgerundete Ecken */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Weiche Schatten */
@@ -209,19 +209,19 @@ h1.item{
   text-align: center; /* Text in der Mitte */
 }
 
-.survey-container h2 {
+.survey h2 {
   font-family: 'YourFont', sans-serif; /* Ersetze 'YourFont' durch die passende Schriftart */
   font-size: 24px; /* Gleiche Größe wie beim Welcome-Kasten */
   color: #333; /* Dunkle Farbe für bessere Lesbarkeit */
 }
 
-.survey-container p {
+.survey p {
   font-family: 'YourFont', sans-serif;
   font-size: 16px;
   color: #666; /* Etwas hellere Farbe für den Text */
 }
 
-.survey-container a {
+.survey a {
   display: inline-block;
   text-decoration: none;
   background-color: #007bff; /* Blaue Farbe für den Button */
@@ -232,7 +232,7 @@ h1.item{
   transition: background 0.3s ease;
 }
 
-.survey-container a:hover {
+.survey a:hover {
   background-color: #0056b3; /* Dunklere Farbe beim Hover-Effekt */
 }
 

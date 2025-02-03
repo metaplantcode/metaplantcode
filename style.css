@@ -205,8 +205,7 @@ h1.item{
   border-radius: 10px; /* Abgerundete Ecken */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Weiche Schatten */
   padding: 2rem; /* Innenabstand */
-  padding-left: 20rem;
-  padding-right: 20rem;
+  max-width: 1000px; /* Gleiche Breite wie der Welcome-Kasten */
   margin: 20px auto; /* Zentriert und mit Abstand nach oben/unten */
   text-align: center; /* Text in der Mitte */
 }
@@ -214,7 +213,6 @@ h1.item{
 .survey h2 {
   color: var(--dark);
 }
-
 
 .palette{
 display: flex;

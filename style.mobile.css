@@ -1,6 +1,4 @@
-
 /*---------------style.css mobile-version----------------*/
-
 
 /* Verhindern, dass das Layout auf mobilen Geräten zu groß wird */
 body {
@@ -35,23 +33,82 @@ div.content {
     box-sizing: border-box;  /* Stellt sicher, dass Padding die Gesamtbreite nicht überschreitet */
 }
 
+/* Menü-Stile */
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark);
+    padding: 10px;
+    width: 100%;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu ul li {
+    padding: 0 1rem;
+}
+
+.menu ul li a {
+    color: white;
+    font-size: 1rem; /* Kleinere Schriftgröße */
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: var(--active); /* Aktiv-Farbe */
+}
+
 /* Anpassungen an kleinere Bildschirme (bis 768px) */
 @media (max-width: 768px) {
+
+    /* Verkleinere das Logo, damit mehr Platz für das Menü ist */
     .header-image img {
         max-width: 100%;
-    } 
+    }
+
+    /* Header-Text und Padding anpassen */
     .header-text {
-        padding-left: 1rem;
-        padding-right: 1rem;       
         font-size: 1.2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Menü-Stile für kleinere Bildschirme */
+    .menu ul {
+        flex-direction: row;  /* Alle Menüeinträge nebeneinander */
+        justify-content: space-between;  /* Gleichmäßiger Abstand */
+        font-size: 0.9rem;  /* Kleinere Schrift für Mobilgeräte */
+    }
+
+    .menu ul li {
+        padding: 0 0.8rem;  /* Weniger Abstand zwischen den Einträgen */
+    }
+
+    .menu ul li a {
+        font-size: 0.9rem;  /* Noch kleinere Schriftgröße */
     }
 }
 
 /* Anpassungen für größere Bildschirme (ab 768px) */
 @media (min-width: 768px) {
-    .header-text {
-        font-size: 1.5rem;
-        padding-left: 2rem;
-        padding-right: 2rem; /* Mehr Abstand auf größeren Geräten */
+    /* Menü für größere Bildschirme anpassen */
+    .menu ul {
+        flex-direction: row;  /* Horizontale Ausrichtung */
+        justify-content: space-around;
+    }
+
+    .menu ul li {
+        padding: 0 1rem;
+    }
+
+    .menu ul li a {
+        font-size: 1.2rem;  /* Standardgröße für Desktop */
     }
 }

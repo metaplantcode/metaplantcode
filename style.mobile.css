@@ -37,9 +37,10 @@ div.content {
 .menu {
     display: flex;
     justify-content: center;
-    background-color: var(--dark);
+    background-color: white;  /* Weißer Hintergrund für das Menü */
     padding: 10px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .menu ul {
@@ -56,7 +57,7 @@ div.content {
 }
 
 .menu ul li a {
-    color: white;
+    color: var(--dark);  /* Dunkle Schriftfarbe für die Links */
     font-size: 1rem; /* Kleinere Schriftgröße */
     text-decoration: none;
 }
@@ -85,6 +86,7 @@ div.content {
         flex-direction: row;  /* Alle Menüeinträge nebeneinander */
         justify-content: space-between;  /* Gleichmäßiger Abstand */
         font-size: 0.9rem;  /* Kleinere Schrift für Mobilgeräte */
+        width: 100%;  /* Menü soll die komplette Breite einnehmen */
     }
 
     .menu ul li {

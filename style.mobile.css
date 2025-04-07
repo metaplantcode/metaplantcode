@@ -67,6 +67,29 @@ div.content {
     padding-right: 1rem;
 }
 
+/* Anpassung für das Metaplan-Logo */
+.header-image {
+    width: 100%;   /* Stellt sicher, dass das Bild die Breite des Containers ausfüllt */
+    max-width: 100%;  /* Maximale Breite auf 100% setzen */
+    height: auto;  /* Hält das Seitenverhältnis des Bildes bei */
+    margin: 0 auto;
+    display: block;
+}
+
+/* Verhindern, dass der Text bis zum Rand geht */
+.header-text {
+    width: 100%;
+    background: var(--dark);
+    color: white;
+    font-size: x-large;
+    margin-top: -1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;  /* Fügt Abstand zum linken Rand hinzu */
+    padding-right: 1rem; /* Fügt Abstand zum rechten Rand hinzu */
+    box-sizing: border-box;  /* Stellt sicher, dass Padding die Gesamtbreite nicht überschreitet */
+}
+
 /* Ab 768px, wenn der Bildschirm größer wird */
 @media (min-width: 768px) {
     .hamburger {
@@ -99,6 +122,22 @@ div.content {
     .menu ul li div a:hover {
         color: var(--active);
     }
+    /* Allgemein: Text nicht bis an den Rand schieben, auch auf größeren Bildschirmen */
+    
+@media (min-width: 768px) {
+    .header-text {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
 
-    /* Wenn der Bildschirm größer als*
-
+/* Anpassungen für größere Bildschirme (Tablet und größer) */
+@media (min-width: 1024px) {
+    .header-image {
+        max-width: 100%; /* Verhindert eine größere Breite als der Container */
+    }
+    .header-text {
+        padding-left: 3rem;
+        padding-right: 3rem; /* Mehr Abstand auf größeren Geräten */
+    }
+}

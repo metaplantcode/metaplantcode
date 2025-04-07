@@ -19,9 +19,14 @@
 .hamburger span {
     width: 30px;
     height: 4px;
-    background-color: white;  /* Weiß für bessere Sichtbarkeit */
+    background-color: var(--dark);  /* Weiß für bessere Sichtbarkeit */
     transition: 0.3s;
     margin: 6px 0;
+}
+
+/* Wenn der Hintergrund dunkel ist, ändern wir die Farbe der Balken auf weiß */
+body.dark-background .hamburger span {
+    background-color: white; /* Weiß auf dunklem Hintergrund */
 }
 
 /* Mobile Ansicht: Menü einblenden, wenn 'open' Klasse aktiv ist */
@@ -106,8 +111,8 @@ div.content {
 /* Anpassungen an kleinere Bildschirme (bis 768px) */
 @media (max-width: 768px) {
     .header-image img {
-        max-width: 200px; /* Verhindert eine größere Breite als der Container */
-    }
+        max-width: 100%;
+    } 
     .header-text {
         padding-left: 1rem;
         padding-right: 1rem;       
@@ -118,6 +123,10 @@ div.content {
     }
     .menu {
         display: none;  /* Menü ist in der mobilen Ansicht standardmäßig nicht sichtbar */
+    }
+    /* Wenn Menü geöffnet wird, sichtbar machen */
+    .menu.open {
+        display: flex;  /* Menü sichtbar machen */
     }
 }
 

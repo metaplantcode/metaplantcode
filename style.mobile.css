@@ -8,52 +8,71 @@
 .hamburger {
     display: block; /* Zeige das Hamburger-Icon */
     cursor: pointer;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 25px;
+    z-index: 9999
 }
 
 .hamburger span {
-    width: 100%;
-    height: 5px;
-    background-color: var(--dark);
-    border-radius: 5px;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    transition: 0.3s;
+    margin: 6px 0;
 }
 
 /* Mobile Ansicht: Menü einblenden, wenn 'open' Klasse aktiv ist */
-.menu.open {
-    display: block;
-    position: absolute;
-    top: 5rem; /* Platz für das Hamburger-Icon */
-    left: 0;
-    width: 100%;
-    background-color: var(--light);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem;
+    color: var(--dark);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sanfter Schatten für das Menü */
 
+    /* Standard-Stil für Menüeinträge */
 .menu ul {
     display: flex;
-    flex-direction: column;  /* Listenelemente untereinander anordnen */
-    justify-content: flex-start;
-    padding: 1rem;
+    list-style: none;
+    padding: 0;
     margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+/* Menüeinträge */
 .menu ul li {
-    text-align: center;
-    padding: 1rem;
-    border-bottom: 1px solid var(--dark);
+    margin: 0 15px;
 }
 
-.menu ul li div a {
-    font-size: 1.2rem;
-    color: var(--dark);
+/* Menüeinträge im Dropdown-Menü */
+.menu ul li a {
     text-decoration: none;
+    color: var(--dark);
+    padding: 8px 15px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
 }
 
-.menu ul li div a:hover {
-    color: var(--active);
+/* Stil für den Hover-Effekt */
+.menu ul li a:hover {
+    background-color: var(--active);
+    color: white;
+}
+
+/* Dropdown-Menü im mobilen Zustand */
+.menu ul {
+    position: absolute;
+    top: 5rem; /* Position unterhalb des Hamburger-Icons */
+    left: 0;
+    right: 0;
+    background-color: var(--dark); /* Dunkler Hintergrund für das Menü */
+    flex-direction: column;
+    display: none; /* Menü ist zunächst unsichtbar */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Schatten für das Dropdown */
+}
+
+/* Menü sichtbar machen, wenn das Hamburger-Menü geklickt wird */
+.menu.open ul {
+    display: flex; /* Zeige das Dropdown-Menü */
 }
 
 /* Verhindern, dass das Layout auf mobilen Geräten zu groß wird */
@@ -89,8 +108,27 @@ div.content {
     box-sizing: border-box;  /* Stellt sicher, dass Padding die Gesamtbreite nicht überschreitet */
 }
 
-/* Ab 768px, wenn der Bildschirm größer wird */
+
+/* Anpassungen an kleinere Bildschirme (bis 768px) */
+@media (max-width: 768px) {
+    .header-image img {
+        max-width: 200px; /* Verhindert eine größere Breite als der Container */
+    }
+    .header-text {
+        padding-left: 1rem;
+        padding-right: 1rem;       
+        font-size: 1.2rem;
+    }
+}
+
+/* Anpassungen für größere Bildschirme (ab 768px) */
 @media (min-width: 768px) {
+    .header-text {
+        font-size: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem; /* Mehr Abstand auf größeren Geräten */
+    }
+
     .hamburger {
         display: none;  /* Hamburger-Icon auf größeren Bildschirmen ausblenden */
     }
@@ -120,26 +158,6 @@ div.content {
 
     .menu ul li div a:hover {
         color: var(--active);
-    }
-
-/* Anpassungen an kleinere Bildschirme (bis 768px) */
-@media (max-width: 768px) {
-    .header-image img {
-        max-width: 200px; /* Verhindert eine größere Breite als der Container */
-    }
-    .header-text {
-        padding-left: 1rem;
-        padding-right: 1rem;       
-        font-size: 1.2rem;
-    }
-}
-
-/* Anpassungen für größere Bildschirme (ab 768px) */
-@media (min-width: 768px) {
-    .header-text {
-        font-size: 1.5rem;
-        padding-left: 2rem;
-        padding-right: 2rem; /* Mehr Abstand auf größeren Geräten */
     }
 }
 

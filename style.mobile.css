@@ -1,1 +1,104 @@
+/*---------------style.css mobile-version----------------*/
+
+/* Standardmäßig das Menü ausblenden und nur das Hamburger-Icon anzeigen */
+.menu {
+    display: none;
+}
+
+.hamburger {
+    display: block; /* Zeige das Hamburger-Icon */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 5px;
+    background-color: var(--dark);
+    border-radius: 5px;
+}
+
+/* Mobile Ansicht: Menü einblenden, wenn 'open' Klasse aktiv ist */
+.menu.open {
+    display: block;
+    position: absolute;
+    top: 5rem; /* Platz für das Hamburger-Icon */
+    left: 0;
+    width: 100%;
+    background-color: var(--light);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;  /* Listenelemente untereinander anordnen */
+    justify-content: flex-start;
+    padding: 1rem;
+    margin: 0;
+}
+
+.menu ul li {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--dark);
+}
+
+.menu ul li div a {
+    font-size: 1.2rem;
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.menu ul li div a:hover {
+    color: var(--active);
+}
+
+/* Verhindern, dass das Layout auf mobilen Geräten zu groß wird */
+body {
+    font-size: 1rem;  /* Kleinere Schriftgröße auf mobilen Geräten */
+}
+
+/* Anpassungen für die Content-Bereiche */
+div.content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Ab 768px, wenn der Bildschirm größer wird */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;  /* Hamburger-Icon auf größeren Bildschirmen ausblenden */
+    }
+
+    /* Menü auf größeren Bildschirmen immer sichtbar */
+    .menu {
+        display: block;
+        position: static;  /* Menüposition zurücksetzen */
+        width: auto;
+        background: none;
+        box-shadow: none;
+    }
+
+    .menu ul {
+        flex-direction: row; /* Horizontale Anordnung der Listenelemente */
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .menu ul li {
+        padding: 0 1rem;  /* Abstand zwischen den Menüelementen */
+    }
+
+    .menu ul li div a {
+        font-size: 1.4rem; /* Größere Schriftgröße für größere Bildschirme */
+    }
+
+    .menu ul li div a:hover {
+        color: var(--active);
+    }
+
+    /* Wenn der Bildschirm größer als*
 

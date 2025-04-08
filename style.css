@@ -802,18 +802,8 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
 
 /* --------------Anpassungen für größere Bildschirme (ab 768px) ------------------*/
 @media (min-width: 768px) {
-    .menu {
-        display: flex;  /* Menü anzeigen */
-        justify-content: space-around;  /* Menüeinträge gleichmäßig verteilen */
-    }
-  
     /* Icons ausblenden auf größeren Bildschirmen */
     .icon-menu {
         display: none;
-    }
-
-    /* Das Text-Menü sichtbar machen */
-    .text-menu {
-        display: flex;
     }
 }

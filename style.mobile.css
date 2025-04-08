@@ -53,7 +53,7 @@ div.content {
 .icon-menu ul li i {
     width: 28px;
     height: 28px;
-    color: #005EB8; /* Metaplan-Blau */
+    color: var(--dark) /* Metaplan-Blau */
     transition: transform 0.2s ease;
     cursor: pointer;
 }
@@ -61,6 +61,24 @@ div.content {
 .icon-menu ul li i:hover {
     transform: scale(1.2);
 }
+
+.icon-menu {
+    display: flex;
+}
+.text-menu {
+    display: none;
+}
+
+.icon-menu ul {
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.icon-menu i {
+    width: 20px;
+    height: 20px;
+}
+
 
 /* Anpassungen an kleinere Bildschirme (bis 768px) */
 @media (max-width: 768px) {
@@ -92,7 +110,25 @@ div.content {
     .menu ul li a {
         font-size: 0.9rem;  /* Noch kleinere Schriftgröße */
     }
+
+    .icon-menu {
+        display: flex;
+    }
+    .text-menu {
+        display: none;
+    }
+
+    .icon-menu ul {
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .icon-menu i {
+        width: 20px;
+        height: 20px;
+    }
 }
+
 
 /* Anpassungen für größere Bildschirme (ab 768px) */
 @media (min-width: 768px) {
@@ -108,5 +144,12 @@ div.content {
 
     .menu ul li a {
         font-size: 1.2rem;  /* Standardgröße für Desktop */
+    }
+    .icon-menu {
+        display: none;
+    }
+    
+    .text-menu {
+        display: flex;
     }
 }

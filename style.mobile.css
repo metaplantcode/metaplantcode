@@ -107,8 +107,4 @@ div.content {
     .icon-menu {
         display: none;
     }
-    
-    .text-menu {
-        display: flex;
-    }
 }

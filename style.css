@@ -178,7 +178,7 @@ div.content{
   text-align: left;
 }
 
-.item-link{
+.welcome-link{
   display:block;
   margin-top:2rem;
   color: var(--active);
@@ -187,7 +187,7 @@ div.content{
   transition:0.3s;
 }
 
-.item-link:hover{
+.welcome-link:hover{
   text-decoration: underline;
 }
 

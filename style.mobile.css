@@ -39,6 +39,7 @@ div.content {
     padding: 1rem;
     width: 100%;
     box-sizing: border-box;
+    display: none /* Standardmäßig ausblenden */
 }
 
 .icon-menu ul {
@@ -62,13 +63,6 @@ div.content {
     transform: scale(1.2);
 }
 
-.icon-menu {
-    display: flex;
-}
-.text-menu {
-    display: none;
-}
-
 .icon-menu ul {
     justify-content: space-between;
     padding: 0.5rem 1rem;
@@ -79,72 +73,37 @@ div.content {
     height: 20px;
 }
 
+.text-menu {
+    display: flex;
+}
+
 
 /* Anpassungen an kleinere Bildschirme (bis 768px) */
 @media (max-width: 768px) {
 
-    /* Verkleinere das Logo, damit mehr Platz für das Menü ist */
     .header-image img {
         max-width: 100%;
     }
-
-    /* Header-Text und Padding anpassen */
     .header-text {
         font-size: 1.2rem;
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
-    /* Menü-Stile für kleinere Bildschirme */
-    .menu ul {
-        flex-direction: row;  /* Alle Menüeinträge nebeneinander */
-        justify-content: space-between;  /* Gleichmäßiger Abstand */
-        font-size: 0.9rem;  /* Kleinere Schrift für Mobilgeräte */
-        width: 100%;  /* Menü soll die komplette Breite einnehmen */
+    .menu {
+        display: none
     }
-
-    .menu ul li {
-        padding: 0 0.8rem;  /* Weniger Abstand zwischen den Einträgen */
-    }
-
-    .menu ul li a {
-        font-size: 0.9rem;  /* Noch kleinere Schriftgröße */
-    }
-
     .icon-menu {
         display: flex;
     }
     .text-menu {
         display: none;
     }
-
-    .icon-menu ul {
-        justify-content: space-between;
-        padding: 0.5rem 1rem;
-    }
-
-    .icon-menu i {
-        width: 20px;
-        height: 20px;
-    }
 }
 
 
 /* Anpassungen für größere Bildschirme (ab 768px) */
 @media (min-width: 768px) {
-    /* Menü für größere Bildschirme anpassen */
-    .menu ul {
-        flex-direction: row;  /* Horizontale Ausrichtung */
-        justify-content: space-around;
-    }
-
-    .menu ul li {
-        padding: 0 1rem;
-    }
-
-    .menu ul li a {
-        font-size: 1.2rem;  /* Standardgröße für Desktop */
-    }
+    
     .icon-menu {
         display: none;
     }

@@ -161,7 +161,7 @@ div.content{
   padding-right: 20rem;
 }
 
-.item{
+.welcome{
   background-color: var(--field); 
   border-radius: 10px; /* Abgerundete Ecken */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Weiche Schatten */
@@ -171,14 +171,13 @@ div.content{
   text-align: center; /* Text in der Mitte */
 }
 
-h1.item{
+.welcome h1{
   margin: 1rem 0 0 0;
   padding: 1rem 0 2rem 2rem;
   color: var(--dark);
-  background: var(--field);
 }
 
-.item-link{
+.welcome-link{
   display:block;
   margin-top:2rem;
   color: var(--active);
@@ -187,7 +186,7 @@ h1.item{
   transition:0.3s;
 }
 
-.item-link:hover{
+.welcome-link:hover{
   text-decoration: underline;
 }
 

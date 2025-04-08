@@ -167,8 +167,13 @@ div.content{
 }
 
 .item{
-  background-color: var(--field);
-  padding:2rem;
+  background-color: var(--field); 
+  border-radius: 10px; /* Abgerundete Ecken */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Weiche Schatten */
+  padding: 2rem; /* Innenabstand */
+  max-width: 1500px;
+  margin: 20px auto; /* Zentriert und mit Abstand nach oben/unten */
+  text-align: center; /* Text in der Mitte */
 }
 
 h1.item{
@@ -205,7 +210,7 @@ h1.item{
   border-radius: 10px; /* Abgerundete Ecken */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Weiche Schatten */
   padding: 2rem; /* Innenabstand */
-  max-width: 1300px; /* Gleiche Breite wie der Welcome-Kasten */
+  max-width: 1500px; /* Gleiche Breite wie der Welcome-Kasten */
   margin: 20px auto; /* Zentriert und mit Abstand nach oben/unten */
   text-align: center; /* Text in der Mitte */
 }

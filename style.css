@@ -3,8 +3,7 @@
   --light: #1ca4a6;
   --active: #98c01e; 
   --dl-grad: linear-gradient(270deg,#0f3b60, #1ca4a6);
-  --field: #f6f6f6;
-  --field-header: linear-gradient(to top, #f6f6f6, #1ca4a6);    
+  --field: #f6f6f6; 
   --1: #000000;
   --2: #abb8c3;
   --3: #FFF;
@@ -89,7 +88,6 @@ text-align: center;
 text-justify: auto;
 clear: both;
 }
-
 
 .menu{
   width:100%;

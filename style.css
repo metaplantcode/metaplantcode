@@ -90,9 +90,6 @@ text-justify: auto;
 clear: both;
 }
 
-.hamburger {
-display: none; /* Nur für mobile Geräte */
-}
 
 .menu{
   width:100%;
@@ -180,7 +177,7 @@ h1.item{
   margin: 1rem 0 0 0;
   padding: 1rem 0 2rem 2rem;
   color: var(--dark);
-  background: var(--field-header);
+  background: var(--field);
 }
 
 .item-link{

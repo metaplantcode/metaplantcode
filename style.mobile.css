@@ -54,7 +54,7 @@ div.content {
 .icon-menu ul li i {
     width: 28px;
     height: 28px;
-    color: var(--dark) /* Metaplan-Blau */
+    color: var(--dark); /* Metaplan-Blau */
     transition: transform 0.2s ease;
     cursor: pointer;
 }
@@ -103,7 +103,7 @@ div.content {
 
 /* Anpassungen für größere Bildschirme (ab 768px) */
 @media (min-width: 768px) {
-    
+
     .icon-menu {
         display: none;
     }

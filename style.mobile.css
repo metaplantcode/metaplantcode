@@ -1,100 +1,85 @@
 /*---------------style.css mobile-version----------------*/
 
-/* Verhindern, dass das Layout auf mobilen Geräten zu groß wird */
-body {
-    font-size: 1rem;  /* Kleinere Schriftgröße auf mobilen Geräten */
-}
-
-/* Anpassungen für die Content-Bereiche */
-div.content {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-/* Anpassung für das Metaplan-Logo */
-.header-image img {
-    width: 100%;   /* Stellt sicher, dass das Bild die Breite des Containers ausfüllt */
-    max-width: 100%;  /* Maximale Breite auf 100% setzen */
-    height: auto;  /* Hält das Seitenverhältnis des Bildes bei */
-    object-fit: contain; /* Verhindert Verzerrungen */
-}
-
-/* Verhindern, dass der Text bis zum Rand geht */
-.header-text {
-    width: 100%;
-    background: var(--dark);
-    color: white;
-    font-size: 1.5rem;
-    margin-top: -1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;  /* Fügt Abstand zum linken Rand hinzu */
-    padding-right: 1rem; /* Fügt Abstand zum rechten Rand hinzu */
-    box-sizing: border-box;  /* Stellt sicher, dass Padding die Gesamtbreite nicht überschreitet */
-}
-
-/* Icon-Menü */
-.icon-menu {
-    background-color: white;
-    padding: 1rem;
-    width: 100%;
-    box-sizing: border-box;
-    display: none /* Standardmäßig ausblenden */
-}
-
-.icon-menu ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.icon-menu ul li i {
-    width: 28px;
-    height: 28px;
-    color: var(--dark); /* Metaplan-Blau */
-    transition: transform 0.2s ease;
-    cursor: pointer;
-}
-
-.icon-menu ul li i:hover {
-    transform: scale(1.2);
-}
-
-.icon-menu ul {
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
-}
-
-.icon-menu i {
-    width: 20px;
-    height: 20px;
-}
-
-.text-menu {
-    display: flex;
-}
-
-
 /* Anpassungen an kleinere Bildschirme (bis 768px) */
 @media (max-width: 768px) {
-
-    .header-image img {
-        max-width: 100%;
+/* Verhindern, dass das Layout auf mobilen Geräten zu groß wird */
+    body {
+        font-size: 1rem;  /* Kleinere Schriftgröße auf mobilen Geräten */
     }
-    .header-text {
-        font-size: 1.2rem;
+
+    /* Anpassungen für die Content-Bereiche */
+    div.content {
         padding-left: 1rem;
         padding-right: 1rem;
     }
+
+    /* Anpassung für das Metaplan-Logo */
+    .header-image img {
+        width: 100%;   /* Stellt sicher, dass das Bild die Breite des Containers ausfüllt */
+        max-width: 100%;  /* Maximale Breite auf 100% setzen */
+        height: auto;  /* Hält das Seitenverhältnis des Bildes bei */
+        object-fit: contain; /* Verhindert Verzerrungen */
+    }
+
+    /* Verhindern, dass der Text bis zum Rand geht */
+    .header-text {
+        width: 100%;
+        background: var(--dark);
+        color: white;
+        font-size: 1.2rem;
+        margin-top: -1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;  /* Fügt Abstand zum linken Rand hinzu */
+        padding-right: 1rem; /* Fügt Abstand zum rechten Rand hinzu */
+        box-sizing: border-box;  /* Stellt sicher, dass Padding die Gesamtbreite nicht überschreitet */
+    }
+
     .menu {
         display: none
     }
+
+    /* Icon-Menü */
     .icon-menu {
-        display: flex;
+        background-color: white;
+        padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex; /* Icons anzeigen */        
+        justify-content: space-between;  /* Icons über den Bildschirm verteilen */
     }
+
+    .icon-menu ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .icon-menu ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-menu ul li i {
+        width: 30px;
+        height: 30px;
+        color: var(--dark); /* Metaplan-Blau */
+        transition: transform 0.2s ease;
+        cursor: pointer;
+    }
+
+    .icon-menu ul li i:hover {
+        transform: scale(1.2);
+    }
+
+    .icon-menu i {
+        width: 20px;
+        height: 20px;
+    }
+
+
     .text-menu {
         display: none;
     }

@@ -27,25 +27,34 @@
                 </p>
 	    </div>
     </header>
-    <div class="hamburger">
-    	<span></span>
-    	<span></span>
-    	<span></span>
-    </div>	
-    <div class="menu"> 
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- TEXT-MENÜ (nur Desktop sichtbar) -->
+        <div class="menu"> 
+            <ul>
+                <li><div class="menu-item"><a href="index.html">HOME</a></div></li>
+                <li><div class="vl"></div></li>
+                <li><div class="menu-item"><a class="menu-active" href="team/index.html">TEAM</a></div></li>
+                <li><div class="vl"></div></li>
+                <li><div class="menu-item"><a href="workpackages/index.html">WORK PACKAGES</a></div></li>
+                <li><div class="vl"></div></li>
+                <li><div class="menu-item"><a href="resource/index.html">ACHIEVEMENTS</a></div></li>
+                <li><div class="vl"></div></li>
+                <li><div class="menu-item"><a href="contact/index.html">CONTACT</a></div></li>
+            </ul>
+        </div>
+    
+    <!-- ICON-MENÜ (nur Mobile sichtbar) -->
+    <div class="icon-menu">
         <ul>
-            <li><div class="menu-item"><a href="../index.html">HOME</a></div></li>
-            <li><div class="vl"></div></li>
-            <li><div class="menu-item"><a class="menu-active" href="../team/index.html">TEAM</a></div></li>
-            <li><div class="vl"></div></li>
-            <li><div class="menu-item"><a href="../workpackages/index.html">WORK PACKAGES</a></div></li>
-            <li><div class="vl"></div></li>
-            <li><div class="menu-item"><a href="../resource/index.html">ACHIEVEMENTS</a></div></li>
-            <li><div class="vl"></div></li>
-            <li><div class="menu-item"><a href="../contact/index.html">CONTACT</a></div></li>
+        <li><a href="index.html"><i data-lucide="home" title="Home"></i></a></li>
+        <li><a href="team/index.html"><i data-lucide="users" title="Team"></i></a></li>
+        <li><a href="workpackages/index.html"><i data-lucide="package" title="Workpackages"></i></a></li>
+        <li><a href="resource/index.html"><i data-lucide="award" title="Achievements"></i></a></li>
+        <li><a href="contact/index.html"><i data-lucide="mail" title="Contact"></i></a></li>
         </ul>
     </div>
-</body>
 
 <body>
     <header class="consortium">
@@ -341,4 +350,3 @@
 </footer>
 
 </html>
-

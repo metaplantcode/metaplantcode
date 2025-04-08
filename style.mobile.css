@@ -99,12 +99,3 @@ div.content {
         display: none;
     }
 }
-
-
-/* Anpassungen für größere Bildschirme (ab 768px) */
-@media (min-width: 768px) {
-
-    .icon-menu {
-        display: none;
-    }
-}

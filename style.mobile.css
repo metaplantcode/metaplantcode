@@ -89,7 +89,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+        gap: 0.5rem;
     }
 
     .footer img {
@@ -99,6 +99,6 @@
     .footer p {
         font-size: 0.9rem; /* Text ein bisschen kleiner */
         text-align: center; /* Text mittig */
-        margin: 1rem; /* Kein extra Abstand */
+        margin: 0.2rem; /* Kein extra Abstand */
     }
 }

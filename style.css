@@ -590,8 +590,8 @@ background-color: white;
 
 /* Hauptinhalt */
 div.content-aboutus {
-padding-left: 20rem;
-padding-right: 20rem;
+padding-left: 5rem;
+padding-right: 5rem;
 }
 
 .item-aboutus {
@@ -601,7 +601,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Weiche Schatten */
 padding: 2rem; /* Innenabstand */
 max-width: 1500px;
 margin: 20px auto; /* Zentriert und mit Abstand nach oben/unten */
-text-align: left;
+text-align: center;
 }
 
 .item-aboutus h1{
@@ -626,7 +626,7 @@ list-style-image: none;
 .workpackage-box {
 max-width: 1500px;
 margin: 20px auto;
-padding: 2rem;
+padding: 5rem;
 background-color: var(--field);
 border-radius: 8px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

@@ -596,12 +596,12 @@ padding-right: 20rem;
 
 .item-aboutus {
 background-color: var(--field); 
-border-radius: 10px; /* Abgerundete Ecken */
+border-radius: 8px; /* Abgerundete Ecken */
 box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Weiche Schatten */
 padding: 2rem; /* Innenabstand */
 max-width: 1500px;
 margin: 20px auto; /* Zentriert und mit Abstand nach oben/unten */
-text-align: center; /* Text in der Mitte */
+text-align: left;
 }
 
 .item-aboutus h1{
@@ -625,7 +625,7 @@ list-style-image: none;
 /* Work Packages */
 .workpackage-box {
 max-width: 1500px;
-margin: 2rem auto;
+margin: 20px auto;
 padding: 2rem;
 background-color: var(--field);
 border-radius: 8px;

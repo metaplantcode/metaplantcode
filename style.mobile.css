@@ -65,7 +65,7 @@
     .icon-menu ul li i {
         width: 30px;
         height: 30px;
-        color: var(--dark); /* Metaplan-Blau */
+        color: #0f3b60; /* Metaplantcode-Blau */
         transition: transform 0.2s ease;
         cursor: pointer;
     }

@@ -399,7 +399,7 @@ height: 5rem;
 
 /*---------------Footer----------------*/
 
-footer img {
+.footer img {
   max-width: 100%;
   height: auto;
   display: block;

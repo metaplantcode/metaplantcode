@@ -1,3 +1,4 @@
+
 :root{ 
   --dark: #0f3b60;
   --light: #1ca4a6;
@@ -398,26 +399,10 @@ height: 5rem;
 
 /*---------------Footer----------------*/
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  gap: 1rem;
+footer img {
   max-width: 100%;
-  box-sizing: border-box;
-}
-
-.footer-logo {
-  height: 3rem; /* kleiner machen für mobile */
-  max-width: 100%;
-}
-
-.footer-text {
-  color: white;
-  font-weight: bold;
-  text-align: center;
+  height: auto;
+  display: block;
 }
 
 /*---------------NEWS----------------*/

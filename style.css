@@ -173,9 +173,7 @@ div.content{
 
 .welcome h1{
   margin: 1rem 0 0 0;
-  padding: 2rem;
   color: var(--dark);
-  text-align: left;
 }
 
 .welcome-link{

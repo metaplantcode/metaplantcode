@@ -85,20 +85,20 @@
     }
     
     /* ------------Footer----------------*/
-    .footer img {
-      max-height: 2.5rem;
-      height: auto;
-      width: auto;
-    }
-    
     .footer div {
-      flex-direction: column !important;
-      align-items: center !important;
-      text-align: center;
-      gap: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
     }
-    
+
+    .footer img {
+        height: 3rem; /* Logos kleiner machen */
+    }
+
     .footer p {
-      font-size: 0.9rem;
+        font-size: 0.9rem; /* Text ein bisschen kleiner */
+        text-align: center; /* Text mittig */
+        margin: 1rem; /* Kein extra Abstand */
     }
 }

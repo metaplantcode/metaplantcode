@@ -21,7 +21,7 @@
         object-fit: contain; /* Verhindert Verzerrungen */
     }
 
-    /* Verhindern, dass der Text bis zum Rand geht */
+    /* ----------Verhindern, dass der Text bis zum Rand geht---------------*/
     .header-text {
         width: 100%;
         background: var(--dark);
@@ -34,12 +34,12 @@
         padding-right: 1rem; /* Fügt Abstand zum rechten Rand hinzu */
         box-sizing: border-box;  /* Stellt sicher, dass Padding die Gesamtbreite nicht überschreitet */
     }
-
+    
+    /* ------------Icon-Menü----------------*/
     .menu {
         display: none
     }
 
-    /* Icon-Menü */
     .icon-menu {
         background-color: white;
         padding: 1rem;
@@ -82,5 +82,23 @@
 
     .text-menu {
         display: none;
+    }
+    
+    /* ------------Footer----------------*/
+    .footer img {
+      max-height: 2.5rem;
+      height: auto;
+      width: auto;
+    }
+    
+    .footer div {
+      flex-direction: column !important;
+      align-items: center !important;
+      text-align: center;
+      gap: 1rem;
+    }
+    
+    .footer p {
+      font-size: 0.9rem;
     }
 }

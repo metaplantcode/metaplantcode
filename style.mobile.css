@@ -87,23 +87,22 @@
     /* ------------Footer----------------*/
     .footer div {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
-        padding: 0;
-        margin: 0;
     }
 
     .footer img {
-        height: 3rem; /* Logos kleiner machen */
-        padding: 0;
-        margin: 0;
+        height: 2.5rem !important; /* Logos kleiner machen */
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     .footer p {
-        font-size: 0.9rem; /* Text ein bisschen kleiner */
+        font-size: 0.8rem; /* Text ein bisschen kleiner */
         text-align: center; /* Text mittig */
-        margin: 0; /* Kein extra Abstand */
-        padding-left: 1rem;
+        margin: 0.5rem 0; /* Kein extra Abstand */
+        padding-left: 0.5rem;
     }
 }

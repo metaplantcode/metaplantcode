@@ -589,11 +589,6 @@ background-color: white;
 }
 
 /* Hauptinhalt */
-div.content-aboutus {
-padding-left: 5rem;
-padding-right: 5rem;
-}
-
 .item-aboutus {
 background-color: var(--field); 
 border-radius: 8px; /* Abgerundete Ecken */

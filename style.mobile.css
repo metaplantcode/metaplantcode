@@ -2,111 +2,107 @@
 
 /* Anpassungen an kleinere Bildschirme (bis 768px) */
 @media (max-width: 768px) {
-/* Verhindern, dass das Layout auf mobilen Geräten zu groß wird */
-    body {
-        font-size: 1rem;  /* Kleinere Schriftgröße auf mobilen Geräten */
-    }
-
-    /* Anpassungen für die Content-Bereiche */
-    div.content {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    /* Anpassung für das Metaplan-Logo */
-    .header-image img {
-        width: 100%;   /* Stellt sicher, dass das Bild die Breite des Containers ausfüllt */
-        max-width: 100%;  /* Maximale Breite auf 100% setzen */
-        height: auto;  /* Hält das Seitenverhältnis des Bildes bei */
-        object-fit: contain; /* Verhindert Verzerrungen */
-    }
-
-    /* ----------Verhindern, dass der Text bis zum Rand geht---------------*/
-    .header-text {
-        width: 100%;
-        background: var(--dark);
-        color: white;
-        font-size: 1.2rem;
-        margin-top: -1rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        padding-left: 1rem;  /* Fügt Abstand zum linken Rand hinzu */
-        padding-right: 1rem; /* Fügt Abstand zum rechten Rand hinzu */
-        box-sizing: border-box;  /* Stellt sicher, dass Padding die Gesamtbreite nicht überschreitet */
-    }
+    /* Verhindern, dass das Layout auf mobilen Geräten zu groß wird */
+        body {
+            font-size: 1rem;  /* Kleinere Schriftgröße auf mobilen Geräten */
+        }
     
-    /* ------------Icon-Menü----------------*/
-    .menu {
-        display: none
-    }
-
-    .icon-menu {
-        background-color: white;
-        padding: 1rem;
-        width: 100%;
-        box-sizing: border-box;
-        display: flex; /* Icons anzeigen */        
-        justify-content: space-between;  /* Icons über den Bildschirm verteilen */
-    }
-
-    .icon-menu ul {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        padding: 1rem;
-    }
-
-    .icon-menu ul li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .icon-menu ul li i {
-        width: 30px;
-        height: 30px;
-        color: #0f3b60; /* Metaplantcode-Blau */
-        transition: transform 0.2s ease;
-        cursor: pointer;
-    }
-
-    .icon-menu ul li i:hover {
-        transform: scale(1.2);
-    }
-
-    .icon-menu i {
-        width: 20px;
-        height: 20px;
-    }
-
-
-    .text-menu {
-        display: none;
-    }
+        /* Anpassungen für die Content-Bereiche */
+        div.content {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
     
-    /* ------------Footer----------------*/
-    .footer div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: felx-start;
-        gap: 0.5rem;
-        margin-top: 0.3rem;
+        /* Anpassung für das Metaplan-Logo */
+        .header-image img {
+            width: 100%;   /* Stellt sicher, dass das Bild die Breite des Containers ausfüllt */
+            max-width: 100%;  /* Maximale Breite auf 100% setzen */
+            height: auto;  /* Hält das Seitenverhältnis des Bildes bei */
+            object-fit: contain; /* Verhindert Verzerrungen */
+        }
+    
+        /* ----------Verhindern, dass der Text bis zum Rand geht---------------*/
+        .header-text {
+            width: 100%;
+            background: var(--dark);
+            color: white;
+            font-size: 1.2rem;
+            margin-top: -1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 1rem;  /* Fügt Abstand zum linken Rand hinzu */
+            padding-right: 1rem; /* Fügt Abstand zum rechten Rand hinzu */
+            box-sizing: border-box;  /* Stellt sicher, dass Padding die Gesamtbreite nicht überschreitet */
+        }
+        
+        /* ------------Icon-Menü----------------*/
+        .menu {
+            display: none
+        }
+    
+        .icon-menu {
+            background-color: white;
+            padding: 1rem;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex; /* Icons anzeigen */        
+            justify-content: space-between;  /* Icons über den Bildschirm verteilen */
+        }
+    
+        .icon-menu ul {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            padding: 1rem;
+        }
+    
+        .icon-menu ul li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .icon-menu ul li i {
+            width: 30px;
+            height: 30px;
+            color: #0f3b60; /* Metaplantcode-Blau */
+            transition: transform 0.2s ease;
+            cursor: pointer;
+        }
+    
+        .icon-menu ul li i:hover {
+            transform: scale(1.2);
+        }
+    
+        .icon-menu i {
+            width: 20px;
+            height: 20px;
+        }
+    
+    
+        .text-menu {
+            display: none;
+        }
+        
+        /* ------------Footer----------------*/
+        .footer div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    
+        .footer img {
+            height: 2.5rem !important; /* Logos kleiner machen */
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    
+        .footer p {
+            font-size: 0.8rem; /* Text ein bisschen kleiner */
+            text-align: center; /* Text mittig */
+            margin: 0.5rem 0; /* Kein extra Abstand */
+            padding-left: 0.5rem;
+        }
     }
-
-    .footer img {
-        height: 2.5rem !important; /* Logos kleiner machen */
-        padding: 0 !important;
-        margin: 0 !important;
-        display: block !important;
-    }
-
-    .footer p {
-        font-size: 0.8rem; /* Text ein bisschen kleiner */
-        text-align: left; /* Text mittig */
-        margin: 0; /* Kein extra Abstand */
-        padding: 0;
-        line-height: 1.2;
-        margin-top: 0.3rem;
-    }
-}

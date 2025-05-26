@@ -527,7 +527,7 @@ text-decoration: underline;
   flex-direction: column; /* Anordnung: Bild oben, Name unten */
   align-items: center; /* Zentriert die Inhalte horizontal */
   text-align: center; /* Text zentrieren */
-  margin: 1rem; /* Abstand zwischen den Mitgliedern */
+  margin: 0.2rem; /* Abstand zwischen den Mitgliedern */
   width: 150px; /* Optionale Breite für jedes Mitglied */
 }
 

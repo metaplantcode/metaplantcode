@@ -1,195 +1,104 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="style.mobile.css" media="screen and (max-width: 768px)">
-    <link rel="icon" href="pics/M-logo.png">
-    <title>METAPLANTCODE - HOME</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MetaPlantCode</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="pics/M-logo2.png">
 </head>
-
 <body>
-    <header> 
-        <!-- Header-Inhalte -->
-        <div class="header-image">
-            <img style="height: 10rem; margin:auto;" src="pics/metaplantlogo.png" alt="">
-        </div>
-        <div class="header-text">
-            <p>Harmonizing plant metabarcoding pipelines in Europe 
-                <br> to support monitoring activities in the field of plants 
-                <br> and their functional organismic networks
-            </p>
-        </div>
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <div class="logo"><a href="https://metaplantcode.github.io/metaplantcode/index.html"><img src="pics/metaplantlogo.png" alt="METAPLANTCODE-Logo" /></a></div>
+        <nav class="nav-links">
+            <a href="about/index.html">About</a>
+            <a href="funding/index.html">Funding</a>
+            <a href="resources/index.html">Resources</a>
+        </nav>
     </header>
-     
-    <script src="https://unpkg.com/lucide@latest"></script>
 
-<!-- TEXT-MENÜ (nur Desktop sichtbar) -->
-    <div class="menu"> 
-        <ul>
-            <li><div class="menu-item"><a class="menu-active" href="index.html">HOME</a></div></li>
-            <li><div class="vl"></div></li>
-            <li><div class="menu-item"><a href="team/index.html">TEAM</a></div></li>
-            <li><div class="vl"></div></li>
-            <li><div class="menu-item"><a href="workpackages/index.html">WORK PACKAGES</a></div></li>
-            <li><div class="vl"></div></li>
-            <li><div class="menu-item"><a href="resource/index.html">ACHIEVEMENTS</a></div></li>
-            <li><div class="vl"></div></li>
-            <li><div class="menu-item"><a href="contact/index.html">CONTACT</a></div></li>
-        </ul>
-    </div>
-  
-  <!-- ICON-MENÜ (nur Mobile sichtbar) -->
-  <div class="icon-menu">
-    <ul>
-      <li><a href="index.html"><i data-lucide="home" title="Home"></i></a></li>
-      <li><a href="team/index.html"><i data-lucide="users" title="Team"></i></a></li>
-      <li><a href="workpackages/index.html"><i data-lucide="package" title="Workpackages"></i></a></li>
-      <li><a href="resource/index.html"><i data-lucide="award" title="Achievements"></i></a></li>
-      <li><a href="contact/index.html"><i data-lucide="mail" title="Contact"></i></a></li>
-    </ul>
-  </div>
-</body>	
-    <div class="content">
-        <div class="welcome">
-            <h1>Welcome!</h1>
-                <p>"METAPLANTCODE presents a unique collaborative and transnational approach to test, optimize, harmonize and recommend best practices for plant metabarcoding for samples with varying degrees of species complexity, contamination and DNA degradation using case studies across Europe. The innovative combination of accelerated molecular plant monitoring and the integration of diverse biodiversity data with optimized and automated pipelines will close knowledge gaps on the state of biodiversity, interdependencies and dynamics. The new techniques are suitable for large-scale, long-term, high-throughput monitoring and enable biodiversity surveys on a scale and with a precision that was previously unattainable."</p>
-                <a class="welcome-link" href="workpackages/index.html"><i class="arrow-right"></i>&nbsp; Details</a>
+    <!-- HERO IMAGE -->
+    <section class="hero">
+        <div class="image-wrapper">
+            <img src="pics/teeblätter.jpg" alt="Hero Image" />
+            <div class="watermark">©MetaPlantCode</div>
         </div>
-        <div class="survey">
-            <h2>Help Shape METAPLANTCODE – Take Our Community Survey Spring 2025!</h2>
-            <p>We are conducting this survey to better understand the composition of our community, as well as the expectations you have from us. The goal is to gain insights into your interests, needs, and challenges related to plant metabarcoding. This will enable us to evaluate how well we are meeting those expectations in the future.</p>
-            <p>The survey will take approximately 10-15 minutes to complete.</p>
-            <p>Your responses are anonymous and will be used solely for research purposes to shape and improve our research accordingly.</p>
-            <a class="welcome-link" href="https://docs.google.com/forms/d/e/1FAIpQLScHvAXkQd5Fd_BzXVai7rcG1iPmSOEroCfRsTOI4yHD_wnUQg/viewform?usp=preview" target="_blank"><i class="arrow-right"></i>&nbsp; Go to Survey</a>
-        </div>
-        <div class="social-media">
-            <a class="smbutton" href="https://www.facebook.com/profile.php?id=61561470754476" target="_blank"><img src="pics/fb-logo.svg" alt="" class="smimage"></a>
-            <a class="smbutton" href="https://www.youtube.com/@MetaPlantCode" target="_blank"><img src="pics/yt-logo.svg" alt="" class="smimage"></a>  
-            <a class="smbutton" href="https://www.instagram.com/metaplantcode/" target="_blank"><img src="pics/Instagram_icon.png.webp" alt="" class="smimage"></a>
-        </div>
-        <div class="view-all-container">
-            <div class="news-header"><p>News and Events</p></div>	
-        </div>
-        <div class="slideshow-container">
+    </section>
 
-            <!-- Slide 1 -->
-            <div class="slide" style="display: none;">
-                <div>
-                    <div class="slide-picture">
-                        <img src="pics/group_picture.jpg" alt="" class="slide-picture-img">
-                        <div class="news-date"><p class="month">MAY</p><p class="day">13/15</p><p class="year">2025</p></div>
-                    </div>
-                    <div class="slide-header">Next METAPLANTCODE plenary meeting in Paris</div>
-                    <div class="slide-text"></div>
-                </div>
+    <!-- WHAT IS METAPLANTCODE -->
+    <section class="about">
+        <div class="about-content">
+            <img src="pics/Biodiversity-EU.png" alt="Round Image" class="about-img" />
+            <div class="about-text">
+                <h2>What is MetaPlantCode?</h2>
+                <p>MetaPlantCode is a collaborative and transnational project with the aim to test, optimize, and harmonize best practices for plant metabarcoding. We use case studies from complex environmental samples across Europe, in order to develop innovative and automated data processing pipelines and laboratory protocols. These innovativations developed through integration of diverse biodiversity data will close knowledge gaps on the state of biodiversity, and community level interdependencies and dynamics. The new techniques will be suitable for large-scale, long-term, high-throughput environmental monitoring with precision that was previously unattainable.</p>
+                <a href="https://annsophie21.github.io/METAPLANTCODE/about/index.html" class="learn-more">Learn more</a>
             </div>
-                    
-            <!-- Slide 2 -->
-            <div class="slide" style="display: none;">
-                <div>
-                    <div class="slide-picture">
-                        <img src="pics/news/logo_3.png" alt="" class="slide-picture-img">
-                        <div class="news-date"><p class="month">NOV</p><p class="day">27/28</p><p class="year">2024</p></div>
-                    </div>
-                    <div class="slide-header">ID-ADN conference</div>
-                    <div class="slide-text"><a target="_blank" href="https://id-adn2024.sciencesconf.org" class="welcome-link"><i class="arrow-right"></i>&nbsp; Link</a></div>
-                </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="slide" style="display: none;">
-                <div>
-                    <div class="slide-picture">
-                        <img src="pics/news_pic_dummy.svg" alt="" class="slide-picture-img">
-                        <div class="news-date"><p class="month">SEP</p><p class="day">01</p><p class="year">2024</p></div>
-                    </div>
-                    <div class="slide-header">Biodiversa+ virtual data management workshop</div>
-                    <div class="slide-text"><a target="_blank" href="https://www.biodiversa.eu/2024/04/15/metaplantcode/" class="welcome-link"><i class="arrow-right"></i>&nbsp; Link</a></div>
-                </div>
-            </div>
-
-            <!-- Slide 4 -->
-            <div class="slide" style="display: block;">
-                <div>
-                    <div class="slide-picture">
-                        <img src="pics/hurra.png" alt="" class="slide-picture-img">
-                        <div class="news-date"><p class="month">APR</p><p class="day">01</p><p class="year">2024</p></div>
-                    </div>
-                    <div class="slide-header">Official Start of METAPLANTCODE</div>
-                    <div class="slide-text"></div>
-                </div>
-            </div>            
-                
-            <!-- Navigation Buttons -->
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
-    </div>   
+    </section>
 
+    <!-- NEWS SECTION -->
+    <section class="news">
+        <h2>Latest News</h2>
+        <div class="news-grid">
+        <div class="news-item">
+            <div class="image-wrapper">
+                <img src="pics/survey.png" alt="News 1" />
+                <div class="watermark">© MetaPlantCode</div>
+            </div>
+            <h3>Thank you for participating in our Spring Survey!</h3>
+            <p>We recently conducted a short anonymous survey to better understand the needs, expectations, and challenges of our community in the field of plant metabarcoding. The responses are currently being evaluated and we’re excited to see what insights emerge. Your input will help us shape the future of MetaPlantCode!</p>
+        </div>
+        <div class="news-item">
+            <div class="image-wrapper">
+                <img src="pics/Pollen_Plantentuin.jpg" alt="News 2" />
+                <div class="watermark">© Meise Botanic Garden</div>
+            </div>
+            <h3>What's in the air</h3>
+            <p>To identify which grass species contribute to hay fever, the Botanic Garden Meise, Sciensano, and KU Leuven are now collecting airborne particles with a vacuum filter. The DNA is analyzed as part of the MetaPlantCode project.</p>
+            <a href="https://www.plantentuinmeise.be/en/pQYzAIG/metaplantcode" target="_blank" class="news-link">Find out more!</a>
+        </div>
+        <div class="news-item">
+            <div class="image-wrapper">
+                <img src="pics/group_picture2025.jpg" alt="News 3" />
+                <div class="watermark">© J.-D. Zucker</div>
+            </div>    
+            <h3>Midterm Meeting</h3>
+            <p>Our midterm meeting took place in Paris from May 13 to 15, 2025. Over the course of three days, there was a lot of discussion, brainstorming, and exchange of ideas. This time, the main focus was on the final product of MetaPlantCode. Exciting things are ahead!</p>
+        </div>
+        <div class="news-item">
+            <div class="image-wrapper">
+                <img src="pics/hurra.png" alt="News 4" />
+                <div class="watermark">© MetaPlantCode</div>
+            </div>
+            <h3>Launch of MetaPlantCode</h3>
+            <p>The project brings together experts to develop better tools and standards for plant metabarcoding across Europe. Exciting developments are ahead!</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-        <!-- Footer-Inhalte -->
-        <div class="footer">
-            <div style="width: 100%; height: 20rem; background:var(--dark); border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
-                <div style="display:flex;">
-                    <a href="https://www.biodiversa.eu/" target="_blank"><img style="height:5rem;padding:2rem;" src="pics/biodiversa.jpg" alt=""></a>
-                    <div style="display:flex;">
-                        <img style="height:5rem;padding:2rem 0 2rem 2rem;" src="pics/ec.jpg" alt="">
-                        <div><p style="color:white; font-weight:bold; padding-top: 2rem;padding-left:1rem;">Co-funded by <br> the European Union</p></div>
-                    </div>
-                </div>
-            </div>
+        <div class="footer-top">
+        <a href="#">What is MetaPlantCode</a>
+        <a href="privacy/index.html">Privacy</a>
+        <a href="contact/index.html">Contact</a>
         </div>
-    </footer> 
+        <div class="footer-middle">
+        <img src="pics/biodiversa_logo_blanc.svg" alt="Biodiversa+" />
+        <img src="pics/ec.jpg" alt="EU" />
+            <div class="footer-text"><p>Co-funded by<br>the European Union</p></div>
+        </div>
+        <div class="footer-social">
+        <a href="https://www.facebook.com/people/Metaplantcode/61561470754476/" target="_blank"><img src="pics/facebook.png" alt="Facebook" /></a>
+        <a href="https://www.instagram.com/metaplantcode/" target="_blank"><img src="pics/instagram.png" alt="Instagram" /></a>
+        </div>
+        <div class="footer-bottom">
+        <a href="https://metaplantcode.github.io/metaplantcode/index.html"><img src="pics/metaplantlogo.png" alt="METAPLANTCODE-Logo" />
+        </div>
+    </footer>
 
-    <!-- JavaScript -->
-    <script>
-        lucide.createIcons();
-        
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        window.onresize = function(){
-           console.log();
-        };
-
-        function showSlides(n) {
-            let i;
-            const slides = document.getElementsByClassName("slide");
-            console.log("Aktuelle Slide-Anzahl: ", slides.length);
-            console.log("Aktueller Index: ", n);
-
-            var w = window.innerWidth;
-
-            if (n > slides.length) { slideIndex = 1; }
-            if (n < 1) { slideIndex = slides.length; }
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            if (w < 1200) {
-                slides[slideIndex - 1].style.display = "block";
-            } else if (w < 1800) {
-                slides[slideIndex - 1].style.display = "block";
-                if (slideIndex < slides.length) {
-                    slides[slideIndex].style.display = "block";
-                }
-            } else {
-                slides[slideIndex - 1].style.display = "block";
-                if (slideIndex < slides.length) {
-                    slides[slideIndex].style.display = "block";
-                }
-                if (slideIndex + 1 < slides.length) {
-                    slides[slideIndex + 1].style.display = "block";
-                }
-            }
-        }
-    </script>
 </body>
 </html>

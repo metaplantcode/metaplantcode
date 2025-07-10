@@ -1,85 +1,84 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../style.css">
-    <link rel="stylesheet" href="../style.mobile.css" media="screen and (max-width: 768px)">
-    <link rel="icon" href="../pics/M-logo.png">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <title>METAPLANTCODE - CONTACT</title>
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MetaPlantCode</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../pics/M-logo2.png">
 </head>
-
 <body>
-    <header> 
-        <div class="header-image">
-            <img style="height: 10rem; margin:auto;" src="../pics/metaplantlogo.png" alt="">
-        </div>
-        <div class="header-text">
-		<p>Harmonizing plant metabarcoding pipelines in Europe 
-                    <br> to support monitoring activities in the field of plants 
-                    <br> and their functional organismic networks
-                </p>
-	    </div>
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <div class="logo"><a href="https://annsophie21.github.io/METAPLANTCODE/"><img src="../pics/metaplantlogo.png" alt="METAPLANTCODE-Logo" /></a></div>
+        <nav class="nav-links">
+            <a href="../about/index.html">About</a>
+            <a href="../funding/index.html">Funding</a>
+            <a href="../resources/index.html">Resources</a>
+        </nav>
     </header>
 
-    <!-- TEXT-MENÜ (nur Desktop sichtbar) -->
-    <div class="menu"> 
-        <ul>
-            <li><div class="menu-item"><a href="../index.html">HOME</a></div></li>
-            <li><div class="vl"></div></li>
-            <li><div class="menu-item"><a href="../team/index.html">TEAM</a></div></li>
-            <li><div class="vl"></div></li>
-            <li><div class="menu-item"><a href="../workpackages/index.html">WORK PACKAGES</a></div></li>
-            <li><div class="vl"></div></li>
-            <li><div class="menu-item"><a href="../resource/index.html">ACHIEVEMENTS</a></div></li>
-            <li><div class="vl"></div></li>
-            <li><div class="menu-item"><a class="menu-active" href="../contact/index.html">CONTACT</a></div></li>
-        </ul>
-    </div>
-    
-    <!-- ICON-MENÜ (nur Mobile sichtbar) -->
-    <div class="icon-menu">
-        <ul>
-        <li><a href="../index.html"><i data-lucide="home" title="Home"></i></a></li>
-        <li><a href="../team/index.html"><i data-lucide="users" title="Team"></i></a></li>
-        <li><a href="../workpackages/index.html"><i data-lucide="package" title="Workpackages"></i></a></li>
-        <li><a href="../resource/index.html"><i data-lucide="award" title="Achievements"></i></a></li>
-        <li><a href="../contact/index.html"><i data-lucide="mail" title="Contact"></i></a></li>
-        </ul>
-    </div>
-    
-    <div class="contact-box">
-        <h1>Contact</h1>
-        <h2>Please get in touch with us if you are interested in learning more about METAPLANTCODE!</h2>
-        <div class="contact">
-            <h3><a href="https://www.uni-kassel.de/fb10/institute/biologie/fachgebiete/botanik/prof-dr-birgit-gemeinholzer" target="_blank">Birgit Gemeinholzer</a></h3>
-            <p>Universität Kassel</p>
-            <p>FB 10 / Institut für Biologie</p>
-            <p>Fachgebiet Botanik</p>
-            <p>Heinrich-Plett-Straße 40</p>
-            <p>34132 Kassel</p>
-            <p><strong>Mail:</strong> b.gemeinholzer@uni-kassel.de</p>
+    <!-- HERO IMAGE -->
+    <section class="hero">
+        <div class="image-wrapper">
+            <img src="../pics/teeblätter.jpg" alt="Hero Image" />
+            <div class="watermark">©MetaPlantCode</div>
         </div>
-    </div>	
+    </section>
 
+    <!-- Contact -->
+    <section class="contact-form">
+      <h2>Send us a message</h2>
+      <form action="https://formsubmit.co/metaplantcode@gmail.com" method="POST">
+        <!-- Anti-spam: Honeypot -->
+        <input type="text" name="_honey" style="display:none">
+    
+        <!-- Disable reCAPTCHA -->
+        <input type="hidden" name="_captcha" value="false">
+    
+        <!-- Redirect to Thank You page -->
+        <input type="hidden" name="_next" value="https://annsophie21.github.io/METAPLANTCODE/contact/thankyou.html">
+    
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+    
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+    
+        <!--  Newsletter-Checkbox -->
+        <label for="newsletter" class="checkbox-label">
+          <input type="checkbox" id="newsletter" name="Newsletter" value="Yes" />
+          I would like to receive the MetaPlantCode newsletter.
+        </label>
+    
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+
+    <!-- FOOTER -->
     <footer>
-        <div class="footer">
-            <div style="width: 100%; height: 20rem; background:var(--dark); border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
-                <div style="display:flex;">
-                    <a href="https://www.biodiversa.eu/" target="_blank"><img style="height:5rem;padding:2rem;" src="../pics/biodiversa.jpg" alt=""></a>
-                    <div style="display:flex;">
-                        <img style="height:5rem;padding:2rem 0 2rem 2rem;" src="../pics/ec.jpg" alt="">
-                        <div><p style="color:white; font-weight:bold; padding-top: 2rem;padding-left:1rem;">Co-funded by <br> the European Union</p></div>
-                    </div>
-                </div>
-            </div>
-        </div>	
+        <div class="footer-top">
+            <a href="../index.html">What is MetaPlantCode</a>
+            <a href="../privacy/index.html">Privacy</a>
+            <a href="../contact/index.html">Contact</a>
+        </div>
+        <div class="footer-middle">
+            <img src="../pics/biodiversa.jpg" alt="Biodiversa+" />
+            <img src="../pics/ec.jpg" alt="EU" />
+            <div class="footer-text"><p>Co-funded by<br>the European Union</p></div>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/people/Metaplantcode/61561470754476/" target="_blank"><img src="../pics/facebook.png" alt="Facebook" /></a>
+            <a href="https://www.instagram.com/metaplantcode/" target="_blank"><img src="../pics/instagram.png" alt="Instagram" /></a>
+        </div>
+        <div class="footer-bottom">
+            <a href="https://annsophie21.github.io/METAPLANTCODE/"><img src="../pics/metaplantlogo.png" alt="METAPLANTCODE-Logo" /></a>
+        </div>
     </footer>
-    <script>
-        lucide.createIcons();
-    </script>
+
 </body>
 </html>

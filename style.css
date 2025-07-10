@@ -843,17 +843,68 @@
 }
   
 /* ================================= Responsive ================================== */
-  @media (max-width: 768px) {
-    .about-content {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .nav-links a {
-      margin-left: 1rem;
-    }
-  
-    .news-grid {
-      grid-template-columns: 1fr;
-    }
+@media (max-width: 768px) {
+  /* Navigation */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .nav-links a {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  /* Logo kleiner */
+  .logo img {
+    height: 50px;
+  }
+
+  /* Parallax-Bereich */
+  .parallax {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .parallax-bg {
+    position: static;
+    height: auto;
+    transform: none;
+    background-attachment: scroll;
+  }
+
+  /* Slideshow-Bild eventuell anpassen */
+  .slide {
+    flex-direction: column;
+  }
+
+  .slide img {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  .slide-text {
+    text-align: center;
+  }
+
+  .slide-nav.left,
+  .slide-nav.right {
+    top: auto;
+    bottom: -2rem;
+    transform: none;
+  }
+
+  .slide-dots {
+    margin-top: 2rem;
+  }
+}
+

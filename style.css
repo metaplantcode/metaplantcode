@@ -830,27 +830,26 @@
 /* ================================= Responsive ================================== */
 @media (max-width: 768px) {
   /* Navigation */
-  .navbar {
+   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 50px; /* statt z. B. 90px */
+    margin-bottom: 1rem;
   }
 
   .nav-links {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 0.5rem;
-    margin-top: 1rem;
   }
 
   .nav-links a {
-    margin: 0;
     font-size: 1.1rem;
-  }
-
-  /* Logo kleiner */
-  .logo img {
-    height: 50px;
+    margin: 0;
   }
 
   /* Parallax-Bereich */
@@ -861,10 +860,19 @@
   }
 
   .parallax-bg {
-    position: static;
-    height: auto;
-    transform: none;
-    background-attachment: scroll;
+    background-attachment: scroll; /* Disable fixed background on mobile */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .hero-parallax {
+    height: 250px; /* Optional: kleinere Höhe für Mobil */
   }
 
   /* Slideshow-Bild eventuell anpassen */

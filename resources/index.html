@@ -21,11 +21,11 @@
     </header>
 
 <!-- HERO IMAGE -->
-    <section class="hero">
-        <div class="image-wrapper">
-            <img src="../pics/teeblätter.jpg" alt="Hero Image" />
-            <div class="watermark">©MetaPlantCode</div>
-        </div>
+    <section class="hero-parallax">
+      <div class="parallax-bg"></div>
+      <div class="hero-content">
+        <div class="watermark">© MetaPlantCode</div>
+      </div>
     </section>
     
     <section class="resources">
@@ -66,6 +66,14 @@
         <a href="../index.html"><img src="../pics/metaplantlogo.png" alt="MetaPlantCode-Logo" />
         </div>
     </footer>
-
+    
+    <script>
+      window.addEventListener("scroll", function () {
+        const bg = document.querySelector(".parallax-bg");
+        const scrolled = window.scrollY;
+        bg.style.transform = `translateY(${scrolled * 0.3}px)`; // Geschwindigkeit anpassbar
+      });
+    </script>
+    
 </body>
 </html>

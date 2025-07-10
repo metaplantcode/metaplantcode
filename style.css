@@ -97,21 +97,6 @@
       font-weight: 600;
       user-select: none;
     }
-
-    @media (max-width: 768px) {
-      .parallax {
-        height: auto;
-        overflow: hidden;
-        position: relative;
-      }
-    
-      .parallax-bg {
-        position: static;
-        height: auto;
-        transform: none;
-        background-attachment: scroll;
-      }
-    }
   
   /* ----------------------ABOUT SECTION------------------------*/
   .about {

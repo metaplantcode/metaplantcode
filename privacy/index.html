@@ -92,5 +92,12 @@
         </div>
     </footer>
 
+    <script>
+      window.addEventListener("scroll", function () {
+        const bg = document.querySelector(".parallax-bg");
+        const scrolled = window.scrollY;
+        bg.style.transform = `translateY(${scrolled * 0.3}px)`; // Geschwindigkeit anpassbar
+      });
+    </script>
 </body>
 </html>

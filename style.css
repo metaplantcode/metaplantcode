@@ -478,20 +478,23 @@
 /* ------------ FAIR DATA SECTION -------------- */
 .fair-data {
   padding: 4rem 2rem;
+  background-color: white;
   color: var(--dark);
 }
 
 .fair-data-content {
   max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
-.fair-data h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.fair-text {
+  flex: 2;
 }
 
-.fair-data p {
+.fair-text p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
   color: black;
@@ -532,6 +535,7 @@
   color: var(--dark);
   font-size: 2rem;
 }
+
 
 /* -------------- Project-Structure ------------- */
 .team-section {
@@ -956,6 +960,14 @@
 
   .slide-dots {
     margin-top: 2rem;
+  }
+
+  .section-title.right {
+    text-align: center;
+  }
+
+  .section-title.left {
+    text-align: center;
   }
 }
 

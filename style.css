@@ -475,6 +475,55 @@
   color: black;
 }
 
+/* ------------ FAIR DATA SECTION -------------- */
+.fair-data {
+  padding: 4rem 2rem;
+  color: var(--dark);
+}
+
+.fair-data-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.fair-data h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.fair-data p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.fair-list {
+  list-style: none;
+  padding: 0;
+}
+
+.fair-list li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.fair-list li::before {
+  content: "✔";
+  color: var(--light);
+  position: absolute;
+  left: 0;
+}
+
+.fair-link a {
+  color: var(--light);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.fair-link a:hover {
+  text-decoration: underline;
+}
+
 /* -------------- Project-Structure ------------- */
 .team-section {
   background-color: var(--field);

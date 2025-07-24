@@ -309,6 +309,16 @@
   color: black;
 }
 
+.background-content a {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.background-content a:hover {
+  text-decoration: none;
+  color: var(--active);
+}
 
 /* ------------ VISION & MISSION SLIDESHOW ----------- */
 .slideshow-section {

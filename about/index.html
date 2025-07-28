@@ -119,34 +119,44 @@
       <div class="team-member">
         <img src="../pics/people/Hugo-De-Boer.png" alt="WP1 Lead" />
         <h3>Hugo De Boer</h3>
-        <p>Work Package 1 – Data & Sampling</p>
+        <p>WP1 – Data & Sampling</p>
         <p>Collect and prepare data and samples, DNA extraction and sequencing</p>
         <a href="#" id="email-wp1">Contact</a>
       </div>
       <div class="team-member">          
-        <a href="https://www.certh.gr/root.en.aspx" target="_blank"><img src="../funding/pics/certh.png" alt="WP 2 -principle contact" /></a>
-        <h3>WP2 - Reference Database</h3>
+        <img src="../pics/people/madesis.jpg" alt="WP2 Lead" />
+        <h3>Panagiotis Madesis</h3>
+        <p>WP2 - Reference Database</p>
         <p>Optimize and update DNA reference database, improve sequencing tools</p>
+        <a href="#" id="email-wp2">Contact</a>
       </div>
       <div class="team-member">          
-        <a href="https://en.ird.fr" target="_blank"><img src="../funding/pics/ird.png" alt="WP 3 -principle contact" /></a>
-        <h3>WP3 - Machine Learning</h3> 
+        <img src="../pics/people/Belda.jpg" alt="WP3 Lead" />
+        <h3>Eugeni Belda</h3> 
+        <p>WP3 - Machine Learning</p>
         <p>Develop and train AI model for DNA analysis and taxonomy</p>
+        <a href="#" id="email-wp3">Contact</a>
       </div>
       <div class="team-member">          
-        <a href="https://www.naturalis.nl/en" target="_blank"><img src="../funding/pics/naturalis_black.png" alt="WP 4 -principle contact" /></a>
-        <h3>WP4 - Databases & Standards</h3>
+        <img src="../pics/people/Niels-Raes.png" alt="WP4 Lead" />
+        <h3>Nils Raes</h3>
+        <p>WP4 - Databases & Standards</p>
         <p>Harmonize data standards, FAIR data training</p>
+        <a href="#" id="email-wp4">Contact</a>
       </div>
       <div class="team-member">        
-        <a href="https://www.hes-so.ch/en/hes-so" target="_blank"><img src="../funding/pics/heso.png" alt="WP 5 -principle contact" /></a>
-        <h3>WP5 - Literature & Taxonomy</h3>
+        <img src="../pics/people/person_blank.png" alt="WP5 Lead" />
+        <h3>Esteban Gaillac</h3>
+        <p>WP5 - Literature & Taxonomy</p>
         <p>Link vegetation literature with taxonomic data, AI text analysis, API integration</p>
+        <a href="#" id="email-wp5">Contact</a>
       </div>
       <div class="team-member">          
-        <a href="https://www.uni-kassel.de/uni/en/" target="_blank"><img src="../funding/pics/university_kassel.png" alt="WP 6 -principle contact" /></a>
-        <h3>WP6 - Coordination & Outreach</h3>
+        <img src="../pics/people/gemeinholzer.jpg" alt="WP6 Lead" />
+        <h3>Birgit Gemeinholzer</h3>
+        <p><WP6 - Coordination & Outreach/p>
         <p>Project management, communication, stakeholder engagement</p>
+        <a href="#" id="email-wp6">Contact</a>
       </div>
     </div>
   </section>
@@ -214,6 +224,23 @@
 
     showSlide(currentSlide); // Initiale Anzeige
   });
+
+  const emails = {
+    "email-wp1": ["h.de.boer", "nhm.uio.no"],
+    "email-wp2": ["pmadesis", "certh.gr"],
+    "email-wp3": ["eugenibc, "gmail.com"],
+    "email-wp4": ["niels.raes", "naturalis.nl"],
+    "email-wp5": ["esteban.gaillac", "hesge.ch"],
+    "email-wp6": ["birgit.gemeinholzer", "uni-kassel.de"],
+  };
+
+  for (const id in emails) {
+    const [user, domain] = emails[id];
+    const el = document.getElementById(id);
+    const fullEmail = `${user}@${domain}`;
+    el.href = `mailto:${fullEmail}`;
+    el.textContent = `📧 ${fullEmail}`;
+  }
 </script>
     
 </body>

@@ -599,6 +599,18 @@
   color: black;
 }
 
+.team-member a {
+  color: var(--ligth);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.team-member a:hover {
+  text-decoration: underline;
+}
+
 /* ================================= Funding ================================== */
 
 .funding {

@@ -226,21 +226,23 @@
   });
 
   const emails = {
-    "email-wp1": ["h.de.boer", "nhm.uio.no"],
-    "email-wp2": ["pmadesis", "certh.gr"],
-    "email-wp3": ["eugenibc, "gmail.com"],
-    "email-wp4": ["niels.raes", "naturalis.nl"],
-    "email-wp5": ["esteban.gaillac", "hesge.ch"],
-    "email-wp6": ["birgit.gemeinholzer", "uni-kassel.de"],
+    "email-wp1": ["h.de.boer@nhm.uio.no"],
+    "email-wp2": ["pmadesis@certh.gr"],
+    "email-wp3": ["eugenibc@gmail.com"],
+    "email-wp4": ["niels.raes@naturalis.nl"],
+    "email-wp5": ["esteban.gaillac@hesge.ch"],
+    "email-wp6": ["birgit.gemeinholzer@uni-kassel.de"],
   };
-
-  for (const id in emails) {
-    const [user, domain] = emails[id];
-    const el = document.getElementById(id);
-    const fullEmail = `${user}@${domain}`;
-    el.href = `mailto:${fullEmail}`;
-    el.textContent = `📧 ${fullEmail}`;
-  }
+    
+  window.addEventListener("DOMContentLoaded", () => {
+    for (const id in emails) {
+      const el = document.getElementById(id);
+      if (el) {
+        const addr = emails[id];
+        el.href = "mailto:" + addr;
+      }
+    }
+  });
 </script>
     
 </body>

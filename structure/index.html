@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MetaPlantCode</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="pics/M-logo2.png">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <div class="logo"><a href="https://metaplantcode.github.io/metaplantcode/index.html"><img src="pics/metaplantlogo.png" alt="METAPLANTCODE-Logo" /></a></div>
+        <nav class="nav-links">
+            <a href="about/index.html">About</a>
+            <a href="funding/index.html">Funding</a>
+            <a href="resources/index.html">Resources</a>
+            <a href="structure/index.html">Structure</a>
+        </nav>
+    </header>
 
+    <!-- HERO IMAGE -->
+    <section class="hero-parallax">
+      <div class="parallax-bg" style="background-image: url('pics/Structure_IMG_4822 2_V2 - Jakob Michel.jpg');"></div>
+      <div class="hero-content">
+        <div class="watermark">© Jakob Michel</div>
+      </div>
+    </section>
+
+    <!-- WHAT IS METAPLANTCODE -->
+    <section class="about">
+        <div class="about-content">
+            <img src="pics/Biodiversity-EU.png" alt="Round Image" class="about-img" />
+            <div class="about-text">
+                <h2>What is MetaPlantCode?</h2>
+                <p>MetaPlantCode is a collaborative and transnational project with the aim to test, optimize, and harmonize best practices for plant metabarcoding. We use case studies from complex environmental samples across Europe, in order to develop innovative and automated data processing pipelines and laboratory protocols. These innovativations developed through integration of diverse biodiversity data will close knowledge gaps on the state of biodiversity, and community level interdependencies and dynamics. The new techniques will be suitable for large-scale, long-term, high-throughput environmental monitoring with precision that was previously unattainable.</p>
+                <a href="https://annsophie21.github.io/METAPLANTCODE/about/index.html" class="learn-more">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS SECTION -->
+    <section class="news">
+        <h2>Latest News</h2>
+        <div class="news-grid">
+        <div class="news-item">
+            <div class="image-wrapper">
+                <img src="pics/survey.png" alt="News 1" />
+                <div class="watermark">© MetaPlantCode</div>
+            </div>
+            <h3>Thank you for participating in our Spring Survey!</h3>
+            <p>We recently conducted a short anonymous survey to better understand the needs, expectations, and challenges of our community in the field of plant metabarcoding. The responses are currently being evaluated and we’re excited to see what insights emerge. Your input will help us shape the future of MetaPlantCode!</p>
+        </div>
+        <div class="news-item">
+            <div class="image-wrapper">
+                <img src="pics/Pollen_Plantentuin.jpg" alt="News 2" />
+                <div class="watermark">© Yves Bawin</div>
+            </div>
+            <h3>What's in the air</h3>
+            <p>To identify which grass species contribute to hay fever, the Botanic Garden Meise, Sciensano, and KU Leuven are now collecting airborne particles with a vacuum filter. The DNA is analyzed as part of the MetaPlantCode project.</p>
+            <a href="https://www.plantentuinmeise.be/en/pQYzAIG/metaplantcode" target="_blank" class="news-link">Find out more!</a>
+        </div>
+        <div class="news-item">
+            <div class="image-wrapper">
+                <img src="pics/group_picture2025 - corrected.jpg" alt="News 3" />
+                <div class="watermark">© J.-D. Zucker</div>
+            </div>    
+            <h3>Midterm Meeting</h3>
+            <p>Our midterm meeting took place in Paris from May 13 to 15, 2025. Over the course of three days, there was a lot of discussion, brainstorming, and exchange of ideas. This time, the main focus was on the final product of MetaPlantCode. Exciting things are ahead!</p>
+        </div>
+        <div class="news-item">
+            <div class="image-wrapper">
+                <img src="pics/Nähe Felsberg - Jakob M. - Piatra Neamt.jpg" alt="News 4" />
+                <div class="watermark">© Jakob Michel</div>
+            </div>
+            <h3>Upcoming annual Meeting 2026</h3>
+            <p>We are looking forward to the upcoming meeting in Piatra Neamț in June 2026. Details will be shared shortly.</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <a href="#">What is MetaPlantCode</a>
+            <a href="privacy/index.html">Privacy</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="footer-middle">
+            <a href="https://www.biodiversa.eu/2024/04/15/metaplantcode/" target="_blank"><img src="pics/biodiversa_logo_blanc.svg" alt="Biodiversa+" /></a>
+            <img src="pics/ec.jpg" alt="EU" />
+                <div class="footer-text"><p>Co-funded by<br>the European Union</p></div>
+        </div>
+        <div class="footer-social">
+        <a href="https://www.facebook.com/people/Metaplantcode/61561470754476/" target="_blank"><img src="pics/facebook.png" alt="Facebook" /></a>
+        <a href="https://www.instagram.com/metaplantcode/" target="_blank"><img src="pics/instagram.png" alt="Instagram" /></a>
+        </div>
+        <div class="footer-bottom">
+        <a href="https://metaplantcode.github.io/metaplantcode/index.html"><img src="pics/metaplantlogo.png" alt="METAPLANTCODE-Logo" />
+        </div>
+    </footer>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        const bg = document.querySelector(".parallax-bg");
+        const scrolled = window.scrollY;
+        bg.style.transform = `translateY(${scrolled * 0.3}px)`; // Geschwindigkeit anpassbar
+      });
+    </script>
+    
+</body>
+</html>

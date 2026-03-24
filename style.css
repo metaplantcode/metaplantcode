@@ -577,7 +577,7 @@
 .team-member img {
   width: 120px;
   height: 120px;
-  border-radius: 50%;
+  border-radius: 10%;
   object-fit: contain;
   background-color: white;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);

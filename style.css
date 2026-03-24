@@ -32,19 +32,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     z-index: 1000;
   }
   
   .logo img {
-    height: 80px;
+    height: 40px;
   }
   
   .nav-links a {
     color: white;
     text-decoration: none;
-    margin-left: 2rem;
-    font-size: 1.1rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     transition: color 0.3s ease;
   }

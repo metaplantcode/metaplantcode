@@ -43,7 +43,7 @@
   .nav-links a {
     color: white;
     text-decoration: none;
-    margin-left: 0.5rem; /*geändert von 1.0 auf 0.5*/
+    margin-left: 0.8rem; /*geändert von 1.0 auf 0.8*/
     font-size: 0.9rem;
     font-weight: 600;
     transition: color 0.3s ease;

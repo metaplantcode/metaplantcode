@@ -978,28 +978,83 @@
   
 /* ================================= Responsive ================================== */
 @media (max-width: 768px) {
-
-  .navbar {
-    flex-direction: row;            /* WICHTIG: nicht mehr column */
-    justify-content: space-between;
+  /* Navigation */
+   .navbar {
+    flex-direction: column;
     align-items: center;
-    padding: 0.3rem 0.8rem;        /* weniger Höhe */
+    text-align: center;
   }
 
   .logo img {
-    height: 35px;                  /* kleineres Logo */
-    margin-bottom: 0;              /* entfernt extra Höhe */
+    height: 50px; /* statt z. B. 90px */
+    margin-bottom: 1rem;
   }
 
   .nav-links {
     display: flex;
-    flex-direction: row;           /* bleibt horizontal */
+    flex-direction: column;
     gap: 0.5rem;
   }
 
   .nav-links a {
-    font-size: 0.8rem;             /* kompakter Text */
+    font-size: 1.1rem;
     margin: 0;
+  }
+
+  /* Parallax-Bereich */
+  .parallax {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .parallax-bg {
+    background-attachment: scroll; /* Disable fixed background on mobile */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .hero-parallax {
+    height: 250px; /* Optional: kleinere Höhe für Mobil */
+  }
+
+  /* Slideshow-Bild eventuell anpassen */
+  .slide {
+    flex-direction: column;
+  }
+
+  .slide img {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  .slide-text {
+    text-align: center;
+  }
+
+  .slide-nav.left,
+  .slide-nav.right {
+    top: auto;
+    bottom: -2rem;
+    transform: none;
+  }
+
+  .slide-dots {
+    margin-top: 2rem;
+  }
+
+  .section-title.right {
+    text-align: center;
+  }
+
+  .section-title.left {
+    text-align: center;
   }
 }
 

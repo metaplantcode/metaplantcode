@@ -37,14 +37,14 @@
   }
   
   .logo img {
-    height: 40px;
+    height: 80px;
   }
   
   .nav-links a {
     color: white;
     text-decoration: none;
     margin-left: 1rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     transition: color 0.3s ease;
   }

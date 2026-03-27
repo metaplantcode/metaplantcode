@@ -44,7 +44,7 @@
     color: white;
     text-decoration: none;
     margin-left: 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem; /*von1rem auf 1.5rem angepasst*/
     font-weight: 600;
     transition: color 0.3s ease;
   }

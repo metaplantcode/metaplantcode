@@ -37,14 +37,14 @@
   }
   
   .logo img {
-    height: 80px; /*von 40px auf 80px angepasst*/
+    height: 80px; /* 80px gut bei FHD-Monitor - 27032026 */
   }
   
   .nav-links a {
     color: white;
     text-decoration: none;
     margin-left: 1rem;
-    font-size: 1.2rem; /*von1rem auf 1.2rem angepasst*/
+    font-size: 1.2rem; /* Schriftgröße 1.2rem bei einem FHD-Monitor vollkommen ok - 27032026 */
     font-weight: 600;
     transition: color 0.3s ease;
   }
@@ -85,7 +85,7 @@
     }
     
     .watermark {
-      font-size: 0.8rem;
+      font-size: 0.8rem; /* auf FHD-Monitoren gut, auf Mobile-Displays auch ok (iPhone SE2) - 27032026 */
       background-color: rgba(255, 255, 255, 0.5);
       color: var(--dark);
       padding: 2px 6px;

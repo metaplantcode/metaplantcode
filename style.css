@@ -987,7 +987,7 @@
 
   .logo img {
     height: 40px; /* statt z. B. 90px */
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.5rem; /* von 0.7rem auf 0.5rem*/
   }
 
   .nav-links {

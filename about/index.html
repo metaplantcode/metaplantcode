@@ -230,6 +230,14 @@
     const scrolled = window.scrollY;
     bg.style.transform = `translateY(${scrolled * 0.3}px)`;
   });
+
+	// === Burger Menü ===
+  const burger = document.getElementById("burger");
+  const nav = document.getElementById("navLinks");
+
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
     
   document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelectorAll(".slide");

@@ -86,13 +86,22 @@
         </div>
     </footer>
     
-    <script>
-      window.addEventListener("scroll", function () {
-        const bg = document.querySelector(".parallax-bg");
-        const scrolled = window.scrollY;
-        bg.style.transform = `translateY(${scrolled * 0.3}px)`; // Geschwindigkeit anpassbar
-      });
-    </script>
+<script>
+  // === Parallax Effekt ===
+  window.addEventListener("scroll", function () {
+    const bg = document.querySelector(".parallax-bg");
+    const scrolled = window.scrollY;
+    bg.style.transform = `translateY(${scrolled * 0.3}px)`;
+  });
+
+  // === Burger Menü ===
+  const burger = document.getElementById("burger");
+  const nav = document.getElementById("navLinks");
+
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
     
 </body>
 </html>

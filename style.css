@@ -1080,11 +1080,27 @@
 
     /*30.03.2026*/
         .burger {
-      display: none;
-      font-size: 1.8rem;
+      display: block; /*von none auf block*/
+      font-size: 2rem; /*von 1.8 auf 2*/
       color: white;
       cursor: pointer;
     }
+        
+        .nav-links {
+          display: none; /* versteckt im Mobile */
+          flex-direction: column;
+          text-align: center;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          width: 100%;
+          background-color: var(--dark);
+          z-index: 999;
+        }
+        
+        .nav-links.active {
+          display: flex;
+        }
     
     @media (max-width: 768px) {
       .burger {

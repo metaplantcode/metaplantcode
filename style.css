@@ -52,6 +52,14 @@
   .nav-links a:hover {
     color: var(--active);
   }
+
+    /* Burger (Desktop versteckt) - 30.03.2026*/
+    .burger {
+      display: none;
+      font-size: 1.8rem;
+      color: white;
+      cursor: pointer;
+    }
   
   /* -----------------------------HERO-------------------------- */
     .hero-parallax {
@@ -978,24 +986,37 @@
   
 /* ================================= Responsive ================================== */
 @media (max-width: 768px) {
-  /* Navigation */
-   .navbar {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+  /* Navigation - original ersetzt am 30.03.2026 */
+    .navbar {
+      flex-direction: row;              /* wichtig für kompakten Header */
+      justify-content: space-between;
+      align-items: center;
+    }
 
   .logo img {
     height: 40px; /* statt z. B. 90px */
     margin-bottom: 0.5rem; /* von 0.7rem auf 0.5rem*/
   }
 
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-  }
+    /* hinzugefügt am 30.03.2026*/
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: var(--dark);
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem 0;
+      z-index: 999;
+    }
 
+    /*Hinzugefügt am 30.03.2026*/
+    .nav-links.active {
+      display: flex;
+    }
+    
   .nav-links a {
     font-size: 0.8rem; /*von 1rem auf 0.8rem geändert*/
     margin: 0;
@@ -1056,5 +1077,20 @@
   .section-title.left {
     text-align: center;
   }
+
+    /*30.03.2026*/
+        .burger {
+      display: none;
+      font-size: 1.8rem;
+      color: white;
+      cursor: pointer;
+    }
+    
+    @media (max-width: 768px) {
+      .burger {
+        display: block;
+      }
+    }
+
 }
 

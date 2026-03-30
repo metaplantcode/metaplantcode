@@ -113,13 +113,14 @@
     </footer>
 
     <script>
-        //Parallax Desktop
+    //JavaScript 
+    //Parallax Desktop
       window.addEventListener("scroll", function () {
         const bg = document.querySelector(".parallax-bg");
         const scrolled = window.scrollY;
         bg.style.transform = `translateY(${scrolled * 0.3}px)`; // Geschwindigkeit anpassbar
-
-        //NEU: Burger Menü - Hinzugefügt am 30.03.2026
+      });
+    //NEU: Burger Menü - Hinzugefügt am 30.03.2026
       const burger = document.getElementById("burger");
       const nav = document.getElementById("navLinks");
         

@@ -190,6 +190,7 @@
     width: 100%;
     height: 160px;
     object-fit: cover;
+    object-position: top; /* Bild wird an der oberen Kante ausgerichtet, der untere Bereich wird abgeschnitten*/
   }
   
   .news-item p {

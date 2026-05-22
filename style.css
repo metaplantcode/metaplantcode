@@ -210,7 +210,72 @@
   .news-link:hover {
     text-decoration: underline;
   }
+
+
+  /*--------------------------- Preliminary Success Stories ---------------------*/
+  .stories {
+    background-color: #ebeaed;
+    color: var(--dark);
+    padding: 4rem 2rem;
+  }
   
+  .stories h2 {
+    color: var(--dark);
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .stories h3 {
+    color: var(--dark);
+    padding: 1rem;
+    margin-bottom: 0.2rem;
+    padding-bottom: 0;
+  }
+  
+  .stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .stories-item {
+    background-color: white;
+    color: #111;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+
+  .stories-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .stories-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    /*object-position: top; /* Bild wird an der oberen Kante ausgerichtet, der untere Bereich wird abgeschnitten*/*/
+  }
+  
+  .stories-item p {
+    margin-top: 0;
+    padding-top: 0;
+    padding: 1rem;
+  }
+  
+  .stories-link  {
+    display: inline-block; 
+    color: var(--light);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .stories-link:hover {
+    text-decoration: underline;
+  }
+
   /* ------------------------FOOTER ---------------------------*/
   footer {
     font-size: 0.9rem;

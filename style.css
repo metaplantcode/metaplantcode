@@ -942,7 +942,7 @@
 
   .TM h3 {
     color: var(--dark);
-    padding: 1rem;
+    padding: 0.2rem;
     margin-bottom: 0.2rem;
     padding-bottom: 0;
   }
@@ -950,7 +950,7 @@
   .TM-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px); /*autofit ist angepasst auf max. 200px pro Feld*/
-    gap: 2rem;
+    gap: 1rem;
     justify-content: start; /* start=linksbündig, center=mittig*/
   }
   

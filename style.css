@@ -927,6 +927,70 @@
     text-decoration: underline;
   }
 
+/* ================================= TRAINING MATERIAL ================================== */
+ .TM {
+    background-color: #E5F1FB;
+    color: var(--dark);
+    padding: 4rem 2rem;
+  }
+  
+  .TM h2 {
+    color: var(--dark);
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .TM h3 {
+    color: var(--dark);
+    padding: 1rem;
+    margin-bottom: 0.2rem;
+    padding-bottom: 0;
+  }
+  
+  .TM-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+  
+  .TM-item {
+    background-color: white;
+    color: #111;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+
+  .TM-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .TM-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .TM-item p {
+    margin-top: 0;
+    padding-top: 0;
+    padding: 1rem;
+  }
+  
+  .TM-link  {
+    display: inline-block; 
+    color: var(--light);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .TM-link:hover {
+    text-decoration: underline;
+  }
+
+
 /* ================================= Privacy ================================== */
 .privacy-policy {
   background-color: #f4f4f4;

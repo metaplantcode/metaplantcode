@@ -949,9 +949,9 @@
   
   .TM-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 300px)); /*autofit ist angepasst auf max. 200px pro Feld*/
+    grid-template-columns: repeat(auto-fit, 300px); /*autofit ist angepasst auf max. 200px pro Feld*/
     gap: 2rem;
-    justify-content: center; /* oder start*/
+    justify-content: start; /* start=linksbündig, center=mittig*/
   }
   
   .TM-item {

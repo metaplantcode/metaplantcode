@@ -864,7 +864,7 @@
   background-color: var(--light);
 }
 
-/* ================================= STRUCTURE SECTION ================================== */
+/* ================================= STRUCTURE SECTION - Project Organization ================================== */
  .WP {
     background-color: #E5F1FB;
     color: var(--dark);
@@ -904,9 +904,10 @@
   }
   
   .WP-item img {
-    width: 100%;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
+    object-position: center top;
   }
   
   .WP-item p {

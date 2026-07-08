@@ -185,6 +185,16 @@
 	"email-wp5_2": ["patrick.ruch@hes-so.ch"],
     "email-wp6": ["birgit.gemeinholzer@uni-kassel.de"],
   };
+
+	  window.addEventListener("DOMContentLoaded", () => {
+    for (const id in emails) {
+      const el = document.getElementById(id);
+      if (el) {
+        const addr = emails[id];
+        el.href = "mailto:" + addr;
+      }
+    }
+  });
 </script>
     
 </body>

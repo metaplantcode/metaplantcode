@@ -1146,6 +1146,8 @@
 @media (max-width: 768px) {
   /* Navigation - original ersetzt am 30.03.2026 */
     .navbar {
+      padding: 0.4rem 1rem;    /*hinzugefügt am 080726*/
+      min-height: auto;      /*hinzugefügt am 080726*/
       flex-direction: row;              /* wichtig für kompakten Header */
       justify-content: space-between;
       align-items: center;

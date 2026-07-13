@@ -886,7 +886,7 @@
   
   .WP-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 2rem;
   }
   
@@ -904,7 +904,7 @@
   }
   
   .WP-item img {
-    width: 80%;
+    width: 100%;
     height: 200px;
     object-fit: cover;
     object-position: center top;

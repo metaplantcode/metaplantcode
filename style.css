@@ -527,6 +527,7 @@
 }
 
 /*----OUR TEAM SECTION------*/
+
 .ourteam-section {
   background-color: #D8ECF2;
   padding: 4rem 2rem;
@@ -552,6 +553,89 @@
   font-size: 1.1rem;
   color: black;
 }
+
+ /*hinzugefügt am 150726*/
+.ourteam-team{
+    cursor:pointer;
+}
+.ourteam-description{
+    height:0;
+    overflow:hidden;
+    transition:height .35s ease;
+    padding:0 1rem;
+    background:white;
+}
+.ourteam-description-inner{
+    padding:1rem 0;
+    border-top:1px solid #ddd;
+}
+.ourteam-item.open .ourteam-description{
+    /*Höhe übernimmt JavaScript*/
+}
+
+.ourteam {
+    background-color: #E5F1FB;
+    color: var(--dark);
+    padding: 2rem 1rem; /*von 4,2 zu 2,1 geändert am 080726*/
+  }
+  
+  .ourteam h2 {
+    color: var(--dark);
+    text-align: left;
+    margin-bottom: 1rem; /*von 2 auf 1 am 080726*/
+  }
+
+  .ourteam h3 {
+    color: var(--dark);
+    padding: 1rem;
+    margin-bottom: 0.2rem;
+    padding-bottom: 0;
+  }
+  
+  .ourteam-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+  }
+  
+  .ourteam-item {
+    background-color: white;
+    color: #111;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+
+  .ourteam-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .ourteam-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center top;
+  }
+  
+  .ourteam-item p {
+    margin-top: 0;
+    padding-top: 0;
+    padding: 1rem;
+  }
+  
+  .ourteam-link  {
+    display: inline-block; 
+    color: var(--light);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .ourteam-link:hover {
+    text-decoration: underline;
+  }
+/*Ende 150726 hinzugefügt*/
 
 /* ------------ METHODS SECTION -------------- */
 .methods-section {

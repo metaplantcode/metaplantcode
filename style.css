@@ -575,7 +575,7 @@
   
   .ourteam-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+    grid-template-columns: repeat(minmax(150px, 300px));
     justify-content: center;
     gap: 2rem;
   }

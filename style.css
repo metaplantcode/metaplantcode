@@ -528,30 +528,11 @@
 
 /*----OUR TEAM SECTION------*/
 
-.ourteam-section {
-  background-color: #D8ECF2;
-  padding: 4rem 2rem;
-}
-.ourteam-content {
-  max-width: 1000px;
-  margin: auto;
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
 .section-title.left {
   flex: 1;
   text-align: left;
   color: var(--dark);
   font-size: 2rem;
-}
-
-.ourteam-text {
-  flex: 2;
-  font-size: 1.1rem;
-  color: black;
 }
 
  /*hinzugefügt am 150726*/
@@ -595,6 +576,7 @@
   .ourteam-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-content: center;
     gap: 2rem;
   }
   
@@ -636,6 +618,7 @@
     text-decoration: underline;
   }
 /*Ende 150726 hinzugefügt*/
+
 
 /* ------------ METHODS SECTION -------------- */
 .methods-section {

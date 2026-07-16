@@ -50,9 +50,9 @@
   </section>
 
 <!-- Our Team-->
-	<section class="ourteam">
+<section class="ourteam">
 	<h2>Our Team</h2>	
-	<div class="ourteam-item">
+<div class="ourteam-item">
     <div class="ourteam-team">
         <img src="../pics/people/gemeinholzer.jpg" alt="Birgit Gemeinholzer">
         <h3>Birgit Gemeinholzer</h3>
@@ -203,32 +203,26 @@
 
 	  //hinzugefügt am 16726
 	// === Our Team Accordion === 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
 
-  const teamItems = document.querySelectorAll(".ourteam-item");
+    document.querySelectorAll(".ourteam-team").forEach(team => {
 
-  teamItems.forEach(item => {
+        team.addEventListener("click", function () {
 
-    const header = item.querySelector(".ourteam-team");
-    const description = item.querySelector(".ourteam-description");
+            const item = this.parentElement;
+            const desc = item.querySelector(".ourteam-description");
 
-    header.addEventListener("click", () => {
+            if (item.classList.contains("open")) {
+                desc.style.height = "0px";
+                item.classList.remove("open");
+            } else {
+                desc.style.height = desc.scrollHeight + "px";
+                item.classList.add("open");
+            }
 
-      // Element ist geöffnet -> schließen
-      if (item.classList.contains("open")) {
-        description.style.height = "0px";
-        item.classList.remove("open");
-      }
-
-      // Element ist geschlossen -> öffnen
-      else {
-        description.style.height = description.scrollHeight + "px";
-        item.classList.add("open");
-      }
+        });
 
     });
-
-  });
 
 });
 //ende hinzugefügt 16726

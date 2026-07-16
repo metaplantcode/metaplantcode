@@ -200,6 +200,38 @@
       });
     }
 
+	  //hinzugefügt am 16726
+	// === Our Team Accordion === 
+document.addEventListener("DOMContentLoaded", () => {
+
+  const teamItems = document.querySelectorAll(".ourteam-item");
+
+  teamItems.forEach(item => {
+
+    const header = item.querySelector(".ourteam-team");
+    const description = item.querySelector(".ourteam-description");
+
+    header.addEventListener("click", () => {
+
+      // Element ist geöffnet -> schließen
+      if (item.classList.contains("open")) {
+        description.style.height = "0px";
+        item.classList.remove("open");
+      }
+
+      // Element ist geschlossen -> öffnen
+      else {
+        description.style.height = description.scrollHeight + "px";
+        item.classList.add("open");
+      }
+
+    });
+
+  });
+
+});
+//ende hinzugefügt 16726
+	  
     prevBtn.addEventListener("click", () => {
       currentSlide = (currentSlide - 1 + slides.length) % slides.length;
       showSlide(currentSlide);

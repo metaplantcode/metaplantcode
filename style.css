@@ -546,7 +546,7 @@
     background:white;
 }
 .ourteam-description-inner{
-    padding:1rem 1; /*von 0 auf 1 geändert - 18082026*/
+    padding:1rem 0.2; /*von 0 auf 0.2 geändert - 18082026*/
     border-top:1px solid #ddd;
 }
 .ourteam-item.open .ourteam-description{

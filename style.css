@@ -575,13 +575,15 @@
 /*Team cards reponsive-Rasteranordnung*/
   .ourteam-grid {
     display: grid;
-    grid-template-columns: repeat(minmax(150px, 300px));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 300px));
     justify-content: center;
     gap: 2rem;
   }
 
 /*Einzelne Team-Mitglieder*/
   .ourteam-item {
+    width: 100%;
+    max-width: 300px;
     background-color: white;
     color: #111;
     border-radius: 0.5rem;
@@ -589,7 +591,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s ease;
     /*wichtig: Erlaubt den einzelnen Karten sich an das Bild anzupassen*/
-    width: 100%;
+    
   }
 
   .ourteam-item:hover {
@@ -603,7 +605,7 @@
     height: auto; /*von 250px auf auto*/
     /* Originalbild wird nicht angepasst*/
     object-fit: contain; /*von cover auf contain*/
-    object-position: center; /*von center top auf center*/
+    object-position: center;
     /*Max-größe von Bildern beschränken*/
       max-height: 350px;
   }

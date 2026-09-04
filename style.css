@@ -580,7 +580,7 @@
     gap: 2rem;
 /* Center the complete grid and items */
     justify-content: center;
-    justify-items: center;
+  /*  justify-items: center;*/
 /* Prevent grid from becoming wider than necessary */
     max-width: 1200px;
     margin: 0 auto;

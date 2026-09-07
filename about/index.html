@@ -188,6 +188,9 @@
     
   document.addEventListener("DOMContentLoaded", () => {
 	  //===SLIDESHOW
+
+	  
+	  
     const slides = document.querySelectorAll(".slide");
     const dots = document.querySelectorAll(".dot");
     const prevBtn = document.querySelector(".slide-nav.left");
@@ -201,6 +204,12 @@
         dots[i].classList.toggle("active", i === index);
       });
     }
+//hinzugefügt am 070926
+document.querySelectorAll(".ourteam-description").forEach(desc => {
+    desc.style.height = "0px";
+});
+//ende hinzugefügt
+	  
 		//Hinzugefügt am 07092026
 	  // === Our Team Accordion ===
 document.querySelectorAll(".ourteam-team").forEach(team => {

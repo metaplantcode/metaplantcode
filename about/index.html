@@ -187,6 +187,7 @@
   });
     
   document.addEventListener("DOMContentLoaded", () => {
+	  //===SLIDESHOW
     const slides = document.querySelectorAll(".slide");
     const dots = document.querySelectorAll(".dot");
     const prevBtn = document.querySelector(".slide-nav.left");
@@ -200,33 +201,28 @@
         dots[i].classList.toggle("active", i === index);
       });
     }
+		//Hinzugefügt am 07092026
+	  // === Our Team Accordion ===
+document.querySelectorAll(".ourteam-team").forEach(team => {
 
-	  //hinzugefügt am 16726
-	// === Our Team Accordion === 
-document.addEventListener("DOMContentLoaded", function () {
+    team.addEventListener("click", function () {
 
-    document.querySelectorAll(".ourteam-team").forEach(team => {
+        const item = this.closest(".ourteam-item");
+        const desc = item.querySelector(".ourteam-description");
 
-        team.addEventListener("click", function () {
-
-            const item = this.parentElement;
-            const desc = item.querySelector(".ourteam-description");
-
-            if (item.classList.contains("open")) {
-                desc.style.height = "0px";
-                item.classList.remove("open");
-            } else {
-                desc.style.height = desc.scrollHeight + "px";
-                item.classList.add("open");
-            }
-
-        });
+        if (item.classList.contains("open")) {
+            desc.style.height = "0px";
+            item.classList.remove("open");
+        } else {
+            desc.style.height = desc.scrollHeight + "px";
+            item.classList.add("open");
+        }
 
     });
 
 });
-//ende hinzugefügt 16726
-	  
+	  //===Ende Hinzugefügt am 07092026
+	  //=====SLIDESHOW Buttons
     prevBtn.addEventListener("click", () => {
       currentSlide = (currentSlide - 1 + slides.length) % slides.length;
       showSlide(currentSlide);

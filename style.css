@@ -562,7 +562,9 @@
     transform: translateY(-70%) rotate(45deg);
     transition: transform 0.3s ease;
     /*hinzugefügt am 08092026*/
-    display: block;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
     z-index: 10;
     /*hinzugefügt 080926 ende*/
 }

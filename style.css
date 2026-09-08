@@ -537,7 +537,32 @@
  /*hinzugefügt am 150726*/
 .ourteam-team{
     cursor:pointer;
+    //hinzugefügt am 08092026
+    position: relative;
+    padding-right: 3rem;
+    //hinzugefügt ende
 }
+//hinzugefügt am 08092026
+/* Chevron */
+.ourteam-team::after {
+    content: "";
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid var(--dark);
+    border-bottom: 2px solid var(--dark);
+    transform: translateY(-70%) rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+/* Chevron points upward when card is open */
+.ourteam-item.open .ourteam-team::after {
+    transform: translateY(-30%) rotate(-135deg);
+}
+//hinzugefügt ende
+
 //hinzugefügt am 07092026
 .ourteam-team a {
     display: block;

@@ -537,50 +537,49 @@
  /*hinzugefügt am 150726*/
 .ourteam-team{
     cursor:pointer;
-    //hinzugefügt am 08092026
+    /*hinzugefügt am 08092026*/
    /*position: relative;*/
     /*padding-right: 3rem;*/
-    //hinzugefügt ende
+    /*hinzugefügt ende*/
 }
 
-//hinzugefügt 08092026
+/*hinzugefügt 08092026*/
 .ourteam-name {
     position: relative;
+    display: block;
 }
 
 .ourteam-chevron {
     position: absolute;
     right: 1rem;
-    top: 75%;
-    
+    top: 50%;
+
     width: 10px;
     height: 10px;
-    
-    border-right: 2px solid #333;
-    border-bottom: 2px solid #333;
-    
-    transform: translateY(-70%) rotate(45deg);
+
+    border-right: 2px solid var(--dark);
+    border-bottom: 2px solid var(--dark);
+
+    transform: translateY(-50%) rotate(45deg);
     transition: transform 0.3s ease;
-    /*hinzugefügt am 08092026*/
-    display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    z-index: 10;
-    /*hinzugefügt 080926 ende*/
+
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
 }
 
-/* Open state */
 .ourteam-item.open .ourteam-chevron {
-    transform: translateY(-30%) rotate(225deg);
+    transform: translateY(-50%) rotate(225deg);
 }
-//hinzugefügt 08092026 ENDE
+/*hinzugefügt 08092026 ENDE*/
 
-//hinzugefügt am 07092026
+/*hinzugefügt am 07092026*/
 .ourteam-team a {
     display: block;
     padding-left: 1rem;
-    /*padding-right: 3rem; //hinzugefügt 08092026*/
-}//ende hinzugefügt
+    /*padding-right: 3rem; /*hinzugefügt 08092026*/
+}/*ende hinzugefügt*/
 
 .ourteam-description{
     height:0;
@@ -612,7 +611,7 @@
   .ourteam h3 {
     color: var(--dark);
     padding: 1rem;
-   /* padding-right: 3rem; //hinzugefügt 08092026*/
+   /* padding-right: 3rem; /*hinzugefügt 08092026*/
     margin-bottom: 0.2rem;
     padding-bottom: 0;
   }
@@ -1396,12 +1395,4 @@
       }
     }
 
-}
-
-.ourteam-chevron {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    border-right: 3px solid red !important;
-    border-bottom: 3px solid red !important;
 }

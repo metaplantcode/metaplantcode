@@ -538,7 +538,7 @@
 .ourteam-team{
     cursor:pointer;
     //hinzugefügt am 08092026
-    position: relative;
+   /*position: relative;*/
     /*padding-right: 3rem;*/
     //hinzugefügt ende
 }

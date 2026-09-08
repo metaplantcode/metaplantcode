@@ -542,31 +542,32 @@
     /*padding-right: 3rem;*/
     //hinzugefügt ende
 }
-//hinzugefügt am 08092026
-/* Chevron */
-.ourteam-team::after {
-    content: "";
+
+//hinzugefügt 08092026
+.ourteam-name {
+    position: relative;
+}
+
+.ourteam-chevron {
     position: absolute;
-    right: 1.2rem;
+    right: 1rem;
     top: 50%;
     
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     
-    border-right: 3px solid #333;
-    border-bottom: 3px solid #333;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
     
     transform: translateY(-70%) rotate(45deg);
     transition: transform 0.3s ease;
-    
-    z-index: 10;
 }
 
-/* Rotate when opened */
-.ourteam-item.open .ourteam-team::after {
+/* Open state */
+.ourteam-item.open .ourteam-chevron {
     transform: translateY(-30%) rotate(225deg);
 }
-//hinzugefügt ende
+//hinzugefügt 08092026 ENDE
 
 //hinzugefügt am 07092026
 .ourteam-team a {

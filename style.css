@@ -610,7 +610,7 @@
 
   .ourteam h3 {
     color: var(--dark);
-    padding: 0.5rem; /*110926 - von 1.0rem auf 0.5rem*/
+    padding: 1rem;
    /* padding-right: 3rem; /*hinzugefügt 08092026*/
     margin-bottom: 0.2rem;
     padding-bottom: 0;

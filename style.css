@@ -577,7 +577,7 @@
 /*hinzugefügt am 07092026*/
 .ourteam-team a {
     display: block;
-    padding-left: 0.5rem; /*110926-von 1.0rem auf 0.5rem*/
+    padding-left: 1rem; 
     /*padding-right: 3rem; /*hinzugefügt 08092026*/
 }/*ende hinzugefügt*/
 
@@ -585,7 +585,7 @@
     height:0;
     overflow:hidden;
     transition:height .35s ease;
-    padding:0 1rem;
+    padding:0 1rem; /*Name d.Person des AP*/
     background:white;
 }
 .ourteam-description-inner{
@@ -664,7 +664,7 @@
   .ourteam-item p {
     margin-top: 0;
     padding-top: 0;
-    padding: 0.5rem; /*110926-von 1.0rem auf 0.5rem*/
+    padding: 0.2rem; /*110926-von 1.0rem auf 0.5rem*/
   }
   
   .ourteam-link  {

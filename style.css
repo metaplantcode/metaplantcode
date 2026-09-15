@@ -620,7 +620,7 @@
  .ourteam-grid {
     display: grid;
 /* Cards can shrink on small screens, but never become huge */
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 300px));
+    grid-template-columns: repeat(auto-fit, minmax(min(/*100%,*/ 250px), 300px));
     gap: 2rem;
 /* Center the complete grid and items */
     justify-content: center;

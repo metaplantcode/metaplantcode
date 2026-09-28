@@ -633,7 +633,7 @@
 /*Einzelne Team-Mitglieder*/
   .ourteam-item {
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     background-color: white;
     color: #111;
     border-radius: 0.5rem;
@@ -657,7 +657,7 @@
     object-fit: contain; /*von cover auf contain*/
     object-position: center;
     /*Max-größe von Bildern beschränken*/
-      max-height: 350px;
+      max-height: 200px;
   }
 
 /*Absatz innerhalb einer Karte - in diesem Fall Infos über Arbeitspaket etc. im Projekt*/

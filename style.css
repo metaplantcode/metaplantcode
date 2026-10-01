@@ -589,7 +589,7 @@
     background:white;
 }
 .ourteam-description-inner{
-    padding:1rem 0.2rem; /*von 0 auf 0.2 geändert - 18082026*/
+    padding:1rem 0.2rem; 
     border-top:1px solid #ddd;
 }
 .ourteam-item.open .ourteam-description{
@@ -599,19 +599,18 @@
 .ourteam {
     background-color: #E5F1FB;
     color: var(--dark);
-    padding: 2rem 1rem; /*von 4,2 zu 2,1 geändert am 080726*/
+    padding: 2rem 1rem; 
   }
   
   .ourteam h2 {
     color: var(--dark);
     text-align: left;
-    margin-bottom: 1rem; /*von 2 auf 1 am 080726*/
+    margin-bottom: 1rem; 
   }
 
   .ourteam h3 {
     color: var(--dark);
     padding: 1rem;
-   /* padding-right: 3rem; /*hinzugefügt 08092026*/
     margin-bottom: 0.2rem;
     padding-bottom: 0;
   }
@@ -632,7 +631,7 @@
 /*Einzelne Team-Mitglieder*/
   .ourteam-item {
     width: 100%;
-    max-width: 230px;
+    max-width: auto; /*230px;*/
     background-color: white;
     color: #111;
     border-radius: 0.5rem;

@@ -619,19 +619,19 @@
  .ourteam-grid {
     display: grid;
 /* Cards can shrink on small screens, but never become huge */
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 300px));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 260px));
     gap: 0.7rem; /*von 1 auf 0.7 gesetzt 30092026*/
 /* Center the complete grid and items */
     justify-content: center;
 /* Prevent grid from becoming wider than necessary */
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
  }
 
 /*Einzelne Team-Mitglieder*/
   .ourteam-item {
     width: 100%;
-    max-width: 230px;
+    max-width: 240px;
     background-color: white;
     color: #111;
     border-radius: 0.5rem;

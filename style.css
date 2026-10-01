@@ -655,7 +655,7 @@
     object-fit: contain; /*von cover auf contain*/
     object-position: center;
     /*Max-größe von Bildern beschränken*/
-      max-height: 200px;
+      max-height: 260px;
   }
 
 /*Absatz innerhalb einer Karte - in diesem Fall Infos über Arbeitspaket etc. im Projekt*/

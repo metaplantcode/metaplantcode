@@ -551,7 +551,7 @@
 
 .ourteam-chevron {
     position: absolute;
-    right: 0.5rem; /*von 1 auf 0.5 am 01102026*/
+    right: 1rem; /*von 1 auf 0.5 am 01102026*/
     top: 50%;
 
     width: 10px;

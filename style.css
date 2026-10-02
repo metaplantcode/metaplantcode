@@ -928,7 +928,7 @@
     color: var(--light);
     font-weight: 600;
     text-decoration: none;
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 0rem 0rem 0rem; /*von 0 1rem,1rem,1rem*/
   }
 
   .funder-link:hover {

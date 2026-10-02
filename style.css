@@ -922,6 +922,20 @@
   transform: scale(1.05);
 }
 
+/*ab hier hinzugefügt am 02102026*/
+.funder-link  {
+    display: inline-block; 
+    color: var(--light);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .funder-link:hover {
+    text-decoration: underline;
+  }
+/*hinzugefügt ende*/
+
 /* ================================= RESOURCES SECTION ================================== */
 .resources {
   background-color: #ebeaed;

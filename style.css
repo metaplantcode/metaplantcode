@@ -982,7 +982,7 @@
 }
 
 .resource-item p {
-  flex-grow: 1;
+  /* flex-grow: 1;*/
   margin-bottom: 1.5rem;
   color: #333;
 }
